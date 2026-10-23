@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated outputs
+analysis/out/
+pipeline/work/
+*.log
+
+# Local, private configuration (never release)
+tools.private.yaml
+tools.private.yaml.template
+external/
+corpus/
+
+# Build artifacts
+build/
+*.o
+*.so
+*.a
+
+# Files moved out of the release
+_excluded_not_for_release/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

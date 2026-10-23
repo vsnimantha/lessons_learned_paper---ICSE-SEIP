@@ -1,0 +1,569 @@
+{
+  "plugin": "gcc-jump-master",
+  "source_dir": "/gcc-jump/gcc-jump-master",
+  "source_files": [
+    "/gcc-jump/gcc-jump-master/src/elf.cpp",
+    "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+    "/gcc-jump/gcc-jump-master/src/main.cpp",
+    "/gcc-jump/gcc-jump-master/src/plugin.cpp"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 46,
+        "severity": "warning",
+        "id": "uninitMemberVar",
+        "message": "Member variable 'elf_file::ehdr' is not initialized in the constructor.",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 323,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 352,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 473,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 494,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 512,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 372,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_ident' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 374,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_machine' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 375,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_version' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 376,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_entry' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 377,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_phoff' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 379,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_flags' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 380,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_ehsize' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 381,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_phentsize' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 382,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf32_external_ehdr::e_phnum' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 389,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_ident' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 391,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_machine' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 392,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_version' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 393,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_entry' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 394,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_phoff' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 396,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_flags' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 397,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_ehsize' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 398,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_phentsize' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+        "line": 399,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'elf64_external_ehdr::e_phnum' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 191,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Struct 'source_location' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 601,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Struct 'unit' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 823,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Struct 'set_usr' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 429,
+        "severity": "style",
+        "id": "knownConditionTrueFalse",
+        "message": "Return value 'expanded_id<rhs.expanded_id' is always false",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 529,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 658,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 790,
+        "severity": "portability",
+        "id": "varFuncNullUB",
+        "message": "Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 796,
+        "severity": "portability",
+        "id": "varFuncNullUB",
+        "message": "Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 803,
+        "severity": "portability",
+        "id": "varFuncNullUB",
+        "message": "Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 809,
+        "severity": "portability",
+        "id": "varFuncNullUB",
+        "message": "Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 1012,
+        "severity": "style",
+        "id": "shadowVariable",
+        "message": "Local variable 'units' shadows outer variable",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 1118,
+        "severity": "style",
+        "id": "shadowVariable",
+        "message": "Local variable 'ld_units' shadows outer variable",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 1044,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'name' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 1057,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'name' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 116,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 147,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 305,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 347,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 367,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 435,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 559,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 576,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 648,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 726,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 750,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc-jump/gcc-jump-master/src/plugin.cpp",
+        "line": 325,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'to' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/gcc-jump/gcc-jump-master/src/elf.cpp:46:warning:uninitMemberVar:Member variable 'elf_file::ehdr' is not initialized in the constructor.\n/gcc-jump/gcc-jump-master/src/elf.cpp:323:style:cstyleCast:C-style pointer casting\n/gcc-jump/gcc-jump-master/src/elf.cpp:352:style:cstyleCast:C-style pointer casting\n/gcc-jump/gcc-jump-master/src/elf.cpp:473:style:cstyleCast:C-style pointer casting\n/gcc-jump/gcc-jump-master/src/elf.cpp:494:style:cstyleCast:C-style pointer casting\n/gcc-jump/gcc-jump-master/src/elf.cpp:512:style:cstyleCast:C-style pointer casting\n/gcc-jump/gcc-jump-master/src/elf.cpp:372:style:unusedStructMember:struct member 'elf32_external_ehdr::e_ident' is never used.\n/gcc-jump/gcc-jump-master/src/elf.cpp:374:style:unusedStructMember:struct member 'elf32_external_ehdr::e_machine' is never used.\n/gcc-jump/gcc-jump-master/src/elf.cpp:375:style:unusedStructMember:struct member 'elf32_external_ehdr::e_version' is never used.\n/gcc-jump/gcc-jump-master/src/elf.cpp:376:style:unusedStructMember:struct member 'elf32_external_ehdr::e_entry' is never used.\n/gcc-jump/gcc-jump-master/src/elf.cpp:377:style:unusedStructMember:struct memb"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS_PARTIAL",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 39,
+        "severity": "warning",
+        "id": "-Wparentheses",
+        "message": "suggest parentheses around assignment used as truth value [-Wparentheses]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 219,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018constexpr gcj::file_location& gcj::file_location::operator=(const gcj::file_location&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 889,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018gcj::unit& gcj::unit::operator=(const gcj::unit&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 584,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018gcj::id_map<std::__cxx11::basic_string<char> >& gcj::id_map<std::__cxx11::basic_string<char> >::operator=(const gcj::id_map<std::__cxx11::basic_string<char> >&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 584,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018gcj::id_map<gcj::source_stack>& gcj::id_map<gcj::source_stack>::operator=(const gcj::id_map<gcj::source_stack>&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.hpp",
+        "line": 584,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018gcj::id_map<gcj::expansion_point>& gcj::id_map<gcj::expansion_point>::operator=(const gcj::id_map<gcj::expansion_point>&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 1098,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018constexpr gcj::jump_tgt& gcj::jump_tgt::operator=(const gcj::jump_tgt&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/gcj.cpp",
+        "line": 1113,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018constexpr gcj::jump_tgt& gcj::jump_tgt::operator=(const gcj::jump_tgt&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc-jump/gcc-jump-master/src/main.cpp",
+        "line": 135,
+        "severity": "warning",
+        "id": "-Wdeprecated-copy",
+        "message": "implicitly-declared \u2018constexpr gcj::file_location& gcj::file_location::operator=(const gcj::file_location&)\u2019 is deprecated [-Wdeprecated-copy]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "plugin.cpp: /gcc-jump/gcc-jump-master/src/plugin.cpp:25:15: error: \u2018source; some files could not be parsed (partial coverage)",
+    "raw": "\n/gcc-jump/gcc-jump-master/src/gcj.cpp: In function \u2018std::string gcj::joinpath(const char*, ...)\u2019:\n/gcc-jump/gcc-jump-master/src/gcj.cpp:39:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n   39 |   while (n = va_arg (ap, char*))\n      |            ^\n/gcc-jump/gcc-jump-master/src/gcj.cpp: In member function \u2018const gcj::jump_to* gcj::context::jump(const gcj::unit*, const gcj::file_location&, int, gcj::file_location*) const\u2019:\n/gcc-jump/gcc-jump-master/src/gcj.cpp:219:24: warning: implicitly-declared \u2018constexpr gcj::file_location& gcj::file_location::operator=(const gcj::file_location&)\u2019 is deprecated [-Wdeprecated-copy]\n  219 |     *begin = it->first.loc;\n      |                        ^~~\nIn file included from /gcc-jump/gcc-jump-master/src/gcj.cpp:6:\n/gcc-jump/gcc-jump-master/src/gcj.hpp:146:3: note: because \u2018gcj::file_location\u2019 has user-provided \u2018gcj::file_location::file_location(const gcj::file_location&)\u2019\n  146 |   file_location (const file_location& loc)\n      |   ^~~~~~~~~~~~~\n/gcc-jump/gcc-jump-master/src/main.cpp: In function \u2018void expand(gcj::set_usr*, int, int, int, int, int, expand_result*)\u2019:\n/gcc-jump/gcc-jump-master/src/main.cpp:135:17: warning: implicitly-declared \u2018constexpr gcj::file_location& gcj::file_location::operator=(const gcj::file_location&)\u2019 is deprecated [-Wdeprecated-copy]\n  135 |   result->lo"
+  },
+  "high_signal_findings": [
+    {
+      "tool": "cppcheck",
+      "file": "/gcc-jump/gcc-jump-master/src/elf.cpp",
+      "line": 46,
+      "severity": "warning",
+      "id": "uninitMemberVar",
+      "message": "Member variable 'elf_file::ehdr' is not initialized in the constructor.",
+      "signal": "HIGH_SIGNAL"
+    }
+  ],
+  "high_signal_count": 1,
+  "overall": "HIGH_SIGNAL_CANDIDATES"
+}

@@ -1,0 +1,23 @@
+{
+  "plugin": "arm_ssp",
+  "source_dir": "/arm_ssp",
+  "source_files": [
+    "/arm_ssp/arm_ssp_per_task_plugin.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "/arm_ssp/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.; /arm_ssp/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.",
+    "raw": "/arm_ssp/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.\n"
+  },
+  "gxx": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "arm_ssp_per_task_plugin.c: /arm_ssp/arm_ssp_per_task_plugin.c:37:34: error: \u2018gen_load_",
+    "raw": "/arm_ssp/arm_ssp_per_task_plugin.c: In function \u2018unsigned int arm_pertask_ssp_rtl_execute()\u2019:\n/arm_ssp/arm_ssp_per_task_plugin.c:37:34: error: \u2018gen_load_tp_hard\u2019 was not declared in this scope\n   37 |                 emit_insn_before(gen_load_tp_hard(current), insn);\n      |                                  ^~~~~~~~~~~~~~~~\n/arm_ssp/arm_ssp_per_task_plugin.c: In function \u2018void arm_pertask_ssp_start_unit(void*, void*)\u2019:\n/arm_ssp/arm_ssp_per_task_plugin.c:56:46: warning: unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]\n   56 | static void arm_pertask_ssp_start_unit(void *gcc_data, void *user_data)\n      |                                        ~~~~~~^~~~~~~~\n/arm_ssp/arm_ssp_per_task_plugin.c:56:62: warning: unused parameter \u2018user_data\u2019 [-Wunused-parameter]\n   56 | static void arm_pertask_ssp_start_unit(void *gcc_data, void *user_data)\n      |                                                        ~~~~~~^~~~~~~~~\nIn file included from /arm_ssp/gcc-common.h:32,\n                 from /Desk\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARSE_FAILED"
+}

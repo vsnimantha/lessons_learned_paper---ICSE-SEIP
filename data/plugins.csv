@@ -1,0 +1,26 @@
+plugin,s3_report_name,group,s1_class,s1_cases,s2_base_cov,s2_full_cov,s2_bugs,s3_flagged,s3_comparisons,s3_cov,s4_status,enters_s1,enters_s2,enters_s3,s2_exclusion_reason,s3_exclusion_reason
+arm_ssp,arrm_ssp,Full-stage subset,F,0,11.8,41.2,0,28,60,67.0,Benign (PIC is a documented limit),1,1,1,,
+CFED,cfed,Full-stage subset,P,2,8.4,47.3,0,65,75,36.8,"Bug D2, violation D3; acknowledged",1,1,1,,
+cprintf,cprintf,Full-stage subset,C,0,17.5,74.2,1,60,60,73.5,"3 bugs, 2 violations (D6 to D10)",1,1,1,,
+funcp_encrypt,funcp-encrypt,Full-stage subset,P,0,17.9,62.3,1,60,60,67.4,Benign (flags); activation defect outside contract,1,1,1,,
+gcc_assert_introspect,gcc_assert_introspect,Full-stage subset,P,0,14.2,58.7,1,45,60,74.0,5 bugs (D11 to D15),1,1,1,,
+instrument_attribute,instrument-attribute,Full-stage subset,P,0,38.7,87.5,0,44,60,87.6,Bug (D4),1,1,1,,
+latent_entropy,latent_entropy,Full-stage subset,P,0,20.8,65.1,0,60,60,52.3,Contract violation (D5),1,1,1,,
+oi,oi,Full-stage subset,P,0,11.4,52.4,0,56,60,72.2,"Benign, non-impacting diagnostic gap",1,1,1,,
+randomize_layout,randomize_layout,Full-stage subset,P,0,18.5,61.4,0,60,60,48.9,Benign,1,1,1,,
+sancov,sancov,Full-stage subset,P,0,23.2,68.9,0,32,60,35.9,"Benign, out of scope (inert on GCC 6+)",1,1,1,,
+SecRetAddress,SecRetAddress,Full-stage subset,C,0,15.1,98.2,1,0,60,97.5,Bug (D1); benign label audited,1,1,1,,
+Stackleak,stack_leak,Full-stage subset,P,0,15.9,59.2,1,60,60,64.5,Benign; activation defect outside contract,1,1,1,,
+Structleak,struck_leak,Full-stage subset,P,0,20.1,63.8,0,60,60,65.0,Benign,1,1,1,,
+static_analyser,,Activation but not verification,P,1,19.4,59.4,1,,,,Defect reported (fprintf2),1,1,0,,TODO
+DFED,,Activation but not verification,P,5,13.8,55.6,1,,,,Defect confirmed by developer; 4 returns uncalled,1,1,0,,TODO
+reftrack,,Activation but not verification,C,1,17.1,57.1,0,,,,"Risk, latent",1,1,0,,TODO
+01_first,roffirim_01_first,Verification but not activation,C,0,,,,0,60,80.8,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
+02_help_version,roffirim_02_help_version,Verification but not activation,C,0,,,,0,60,80.8,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
+03_parameters,roffirim_03_parameters,Verification but not activation,C,0,,,,0,60,66.7,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
+04_callbacks,roffirim_04_callbacks,Verification but not activation,C,0,,,,0,60,94.5,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
+05_my_first_pass,,Static analysis only,C,0,,,,,,,No finding,1,0,0,TODO,TODO
+CTraps,,Static analysis only,P,3,,,,,,,"3 source defects, no execution evidence",1,0,0,TODO,TODO
+KayrebtCallgraphs,,Static analysis only,P,0,,,,,,,No high-signal report,1,0,0,TODO,TODO
+gcc-jump-master,,Static analysis only,P,1,,,,,,,"Risk, unresolved",1,0,0,TODO,TODO
+gcc-python-plugin,,Static analysis only,P,0,,,,,,,No high-signal report,1,0,0,TODO,TODO

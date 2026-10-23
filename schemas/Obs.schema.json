@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Obs",
+  "description": "Stage s3",
+  "type": "object",
+  "required": [
+    "plugin",
+    "obligation",
+    "log_point"
+  ],
+  "properties": {
+    "plugin": {
+      "description": "string"
+    },
+    "obligation": {
+      "description": "string"
+    },
+    "log_point": {
+      "description": "string (instrumentation site)"
+    }
+  }
+}

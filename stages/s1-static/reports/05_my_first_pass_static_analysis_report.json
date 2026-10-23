@@ -1,0 +1,44 @@
+{
+  "plugin": "05_my_first_pass",
+  "source_dir": "/rofirrim_github/gcc-plugins-master/05_my_first_pass",
+  "source_files": [
+    "/rofirrim_github/gcc-plugins-master/05_my_first_pass/my_first_pass.cc",
+    "/rofirrim_github/gcc-plugins-master/05_my_first_pass/test.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/rofirrim_github/gcc-plugins-master/05_my_first_pass/my_first_pass.cc",
+        "line": 29,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Struct 'my_first_pass' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/rofirrim_github/gcc-plugins-master/05_my_first_pass/my_first_pass.cc:29:style:noExplicitConstructor:Struct 'my_first_pass' has a constructor with 1 argument that is not explicit.\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/05_my_first_pass/my_first_pass.cc",
+        "line": 34,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018fun\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/rofirrim_github/gcc-plugins-master/05_my_first_pass/my_first_pass.cc: In member function \u2018virtual unsigned int {anonymous}::my_first_pass::execute(function*)\u2019:\n/rofirrim_github/gcc-plugins-master/05_my_first_pass/my_first_pass.cc:34:48: warning: unused parameter \u2018fun\u2019 [-Wunused-parameter]\n   34 |         virtual unsigned int execute(function *fun) override\n      |                                      ~~~~~~~~~~^~~\n\n\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "LOW_SIGNAL_ONLY"
+}

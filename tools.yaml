@@ -1,0 +1,37 @@
+# Stage slots of the pipeline. Each slot is filled by a tool that lives in its own
+# repository. This package contains only the neutral ids and the contracts in
+# stages/*/README.md. Private tool names, URLs and paths go in tools.private.yaml,
+# which is not released.
+#
+# status values: present | placeholder | not_released
+stages:
+  s1:
+    id: static
+    role: "Stage 1, static analysis and report triage"
+    contract: stages/s1-static/README.md
+    entry_point: stages/s1-static/run.sh          # TODO place or link the tool here
+    status: placeholder
+    expected_outputs: [s1_reports.jsonl, s1_candidates.jsonl]
+  s2:
+    id: activation
+    role: "Stage 2, plugin-aware activation (search-based program generation)"
+    contract: stages/s2-activation/README.md
+    entry_point: stages/s2-activation/run.sh
+    status: placeholder
+    expected_outputs: [s2_activation.jsonl, s2_failures.jsonl, s2_coverage.csv, tests/]
+  s3:
+    id: verification
+    role: "Stage 3, differential verification (instrumentation, 15 variants, binary and call-frame diff)"
+    contract: stages/s3-verification/README.md
+    entry_point: stages/s3-verification/run.sh
+    status: placeholder
+    expected_outputs: [s3_records.csv]
+  s4:
+    id: triage
+    role: "Stage 4, contract-driven triage and adjudication"
+    contract: stages/s4-triage/README.md
+    entry_point: stages/s4-triage/run.sh
+    status: placeholder
+    expected_outputs: [s4_verdicts.csv, s4_findings.csv, reproducers/]
+# Optional extra tools, same contract mechanism (see docs/INTEGRATING_TOOLS.md).
+extra_tools: []

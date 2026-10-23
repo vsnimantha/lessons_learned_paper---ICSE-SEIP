@@ -1,0 +1,44 @@
+{
+  "plugin": "02_help_version",
+  "source_dir": "/rofirrim_github/gcc-plugins-master/02_help_version",
+  "source_files": [
+    "/rofirrim_github/gcc-plugins-master/02_help_version/help_version.cc",
+    "/rofirrim_github/gcc-plugins-master/02_help_version/test.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/rofirrim_github/gcc-plugins-master/02_help_version/test.c",
+        "line": 49,
+        "severity": "warning",
+        "id": "negativeIndex",
+        "message": "Either the condition 'top>=0' is redundant or the array 'stack[2147483648]' is accessed at index -1, which is out of bounds.",
+        "signal": "HIGH_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/rofirrim_github/gcc-plugins-master/02_help_version/test.c:49:warning:negativeIndex:Either the condition 'top>=0' is redundant or the array 'stack[2147483648]' is accessed at index -1, which is out of bounds.\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_CLEAN",
+    "findings": [],
+    "reason": "",
+    "raw": "\n\n"
+  },
+  "high_signal_findings": [
+    {
+      "tool": "cppcheck",
+      "file": "/rofirrim_github/gcc-plugins-master/02_help_version/test.c",
+      "line": 49,
+      "severity": "warning",
+      "id": "negativeIndex",
+      "message": "Either the condition 'top>=0' is redundant or the array 'stack[2147483648]' is accessed at index -1, which is out of bounds.",
+      "signal": "HIGH_SIGNAL"
+    }
+  ],
+  "high_signal_count": 1,
+  "overall": "HIGH_SIGNAL_CANDIDATES"
+}

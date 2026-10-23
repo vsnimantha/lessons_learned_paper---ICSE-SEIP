@@ -1,0 +1,18 @@
+plugin,report_name,verdict,findings,group
+SecRetAddress,SecRetAddress,confirmed bug,D1,other
+CFED,cfed,confirmed bug (A) and contract violation (B),D2;D3,bug
+Instrument Attribute,instrument-attribute,confirmed bug,D4,bug
+Latent Entropy,latent_entropy,confirmed contract violation,D5,bug
+cprintf,cprintf,confirmed bugs (A) and contract violations (B),D6;D7;D8;D9;D10,bug
+gcc_assert_introspect,gcc_assert_introspect,confirmed bugs,D11;D12;D13;D14;D15,bug
+Stackleak,stack_leak,confirmed benign,,benign
+Structleak,struck_leak,confirmed benign,,benign
+Randomize Layout,randomize_layout,confirmed benign,,benign
+Sancov,sancov,benign out of scope,,benign
+ARM SSP,arrm_ssp,confirmed benign,,benign
+Funcp-encrypt,funcp-encrypt,confirmed benign,,benign
+oi,oi,benign non-impacting diagnostic gap,,benign
+Roffirim 01,roffirim_01_first,not examined,,other
+Roffirim 02,roffirim_02_help_version,not examined,,other
+Roffirim 03,roffirim_03_parameters,not examined,,other
+Roffirim 04,roffirim_04_callbacks,not examined,,other

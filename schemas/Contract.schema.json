@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Contract",
+  "description": "Stage s4",
+  "type": "object",
+  "required": [
+    "plugin",
+    "statement",
+    "oracle"
+  ],
+  "properties": {
+    "plugin": {
+      "description": "string"
+    },
+    "statement": {
+      "description": "string (what the plugin must do)"
+    },
+    "oracle": {
+      "description": "string (probe or sanitizer that decides it)"
+    }
+  }
+}

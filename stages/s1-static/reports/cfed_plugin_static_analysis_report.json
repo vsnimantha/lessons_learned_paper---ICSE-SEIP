@@ -1,0 +1,1369 @@
+{
+  "plugin": "cfed_plugin",
+  "source_dir": "/cfed_plugin",
+  "source_files": [
+    "/cfed_plugin/Asm/AsmGen.cpp",
+    "/cfed_plugin/Asm/InstrType.cpp",
+    "/cfed_plugin/Asm/UpdatePoint.cpp",
+    "/cfed_plugin/CFED_Plugin.cpp",
+    "/cfed_plugin/CFED_Plugin_Main.cpp",
+    "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+    "/cfed_plugin/CFED_Techniques/CFEDcreator.cpp",
+    "/cfed_plugin/CFED_Techniques/ECCA.cpp",
+    "/cfed_plugin/CFED_Techniques/GeneralCFED.cpp",
+    "/cfed_plugin/CFED_Techniques/RACFED.cpp",
+    "/cfed_plugin/CFED_Techniques/RSCFC.cpp",
+    "/cfed_plugin/CFED_Techniques/SCFC.cpp",
+    "/cfed_plugin/CFED_Techniques/SEDSR.cpp",
+    "/cfed_plugin/CFED_Techniques/SIED.cpp",
+    "/cfed_plugin/CFED_Techniques/YACCA.cpp",
+    "/cfed_plugin/CFED_Techniques/YACCA_Fast.cpp",
+    "/cfed_plugin/Printer/Printer.cpp",
+    "/cfed_plugin/Targets/ARMv6M_Functions.cpp",
+    "/cfed_plugin/Targets/ARMv7M_Functions.cpp",
+    "/cfed_plugin/Targets/ARMv8M_Functions.cpp",
+    "/cfed_plugin/Targets/ArmISA_Functions.cpp"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Asm/AsmGen.cpp",
+        "line": 203,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'next' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Asm/AsmGen.cpp",
+        "line": 203,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'next' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Asm/InstrType.cpp",
+        "line": 54,
+        "severity": "style",
+        "id": "knownConditionTrueFalse",
+        "message": "Condition 'nrOfSuccs==1' is always true",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 145,
+        "severity": "error",
+        "id": "returnDanglingLifetime",
+        "message": "Returning pointer to local variable 'msg' that will be invalid when returning.",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 74,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 98,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 99,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 100,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 101,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 116,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 74,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'funName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin.cpp",
+        "line": 173,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'fCopyParts' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Plugin_Main.cpp",
+        "line": 53,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'ver' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv6M_Functions.h",
+        "line": 21,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'ARMv6M_Functions' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv7M_Functions.h",
+        "line": 21,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'ARMv7M_Functions' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv8M_Functions.h",
+        "line": 21,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'ARMv8M_Functions' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv6M_Functions.h",
+        "line": 24,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'changeCBZ' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv6M_Functions.h",
+        "line": 27,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertPush' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv6M_Functions.h",
+        "line": 28,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertPop' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv7M_Functions.h",
+        "line": 24,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'changeCBZ' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv7M_Functions.h",
+        "line": 27,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertPush' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv7M_Functions.h",
+        "line": 28,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertPop' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv8M_Functions.h",
+        "line": 24,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'changeCBZ' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv8M_Functions.h",
+        "line": 27,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertPush' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv8M_Functions.h",
+        "line": 28,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertPop' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 33,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 38,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 39,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 40,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 43,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 44,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 45,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 30,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 32,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 34,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 40,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SEDSR.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 30,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 32,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 34,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 40,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 31,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 33,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 38,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.h",
+        "line": 43,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 31,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 33,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 38,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.h",
+        "line": 43,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 30,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 32,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 34,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 40,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 30,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 32,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 34,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 40,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 31,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 33,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 38,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RSCFC.h",
+        "line": 43,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 31,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'calcVariables' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 33,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertIntraBlockJumpDetection' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 35,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 36,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 37,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 38,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSetup' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 41,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelBegin' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 42,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelMiddle' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.h",
+        "line": 43,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'insertSelEnd' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+        "line": 149,
+        "severity": "style",
+        "id": "useStlAlgorithm",
+        "message": "Consider using std::any_of, std::all_of, std::none_of algorithm instead of a raw loop.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+        "line": 296,
+        "severity": "error",
+        "id": "uninitvar",
+        "message": "Uninitialized variable: path.upD",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+        "line": 296,
+        "severity": "error",
+        "id": "uninitStructMember",
+        "message": "Uninitialized struct member: path.upD",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+        "line": 115,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+        "line": 147,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+        "line": 251,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.cpp",
+        "line": 76,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'prev' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/ECCA.cpp",
+        "line": 101,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'prev' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.h",
+        "line": 54,
+        "severity": "style",
+        "id": "unusedPrivateFunction",
+        "message": "Unused private function: 'RACFED::getPrevInsn'",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.cpp",
+        "line": 136,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'intraBlockValue' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/RACFED.cpp",
+        "line": 388,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'prev' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SCFC.cpp",
+        "line": 160,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'falseRTX' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.cpp",
+        "line": 136,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'jmp' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/SIED.cpp",
+        "line": 136,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'jmp' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.cpp",
+        "line": 213,
+        "severity": "style",
+        "id": "clarifyCondition",
+        "message": "Boolean result is used in bitwise operation. Clarify expression with parentheses.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.cpp",
+        "line": 295,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/CFED_Techniques/YACCA_Fast.cpp",
+        "line": 314,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 56,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 78,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 78,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 175,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 176,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 177,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 193,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 205,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 205,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 142,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 142,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'dirName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 141,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'fileName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 152,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'fileName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 187,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'fileName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv6M_Functions.cpp",
+        "line": 35,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ARMv6M_Functions.cpp",
+        "line": 54,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cfed_plugin/Targets/ArmISA_Functions.cpp",
+        "line": 125,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regs' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/cfed_plugin/Asm/AsmGen.cpp:203:style:constVariablePointer:Variable 'next' can be declared as pointer to const\n/cfed_plugin/Asm/AsmGen.cpp:203:style:unreadVariable:Variable 'next' is assigned a value that is never used.\n/cfed_plugin/Asm/InstrType.cpp:54:style:knownConditionTrueFalse:Condition 'nrOfSuccs==1' is always true\n/cfed_plugin/CFED_Plugin.cpp:145:error:returnDanglingLifetime:Returning pointer to local variable 'msg' that will be invalid when returning.\n/cfed_plugin/CFED_Plugin.cpp:74:style:cstyleCast:C-style pointer casting\n/cfed_plugin/CFED_Plugin.cpp:98:style:cstyleCast:C-style pointer casting\n/cfed_plugin/CFED_Plugin.cpp:99:style:cstyleCast:C-style pointer casting\n/cfed_plugin/CFED_Plugin.cpp:100:style:cstyleCast:C-style pointer casting\n/cfed_plugin/CFED_Plugin.cpp:101:style:cstyleCast:C-style pointer casting\n/cfed_plugin/CFED_Plugin.cpp:116:style:cstyleCast:C-style pointer casting\n/cfed_plugin/CFED_Plugin.cpp:74:style:constVariablePointer:Variable 'funName' can be declared as pointer to const\n/cfed_plugin/CFED_Plugin.cpp:173:style:constVariablePointer:Variable 'fCopyParts' can be declared as pointer to const\n/cfed_plugin/CFED_Plugin_Main.cpp:53:style:constParameterPointer:Parameter 'ver' can be declared as pointer to const\n/cfed_plugin/Targets/ARMv6M_Functions.h:21:style:noExplicitConstructor:Class 'ARMv6M_Functions' has a constructor with 1 argument that is not explicit.\n/cfed_plugin/Targets/ARMv7M_Functions.h:21:style:noExplicitConstructor:Class 'ARMv7M_Functions' has a constructor with 1 argument that is not explicit.\n/cfed_plugin/Targets/ARMv8M_Functions.h:21:style:noExplicitConstructor:Class 'ARMv8M_Functions' has a constructor with 1 "
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS_PARTIAL",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/cfed_plugin/Asm/InstrType.cpp",
+        "line": 199,
+        "severity": "warning",
+        "id": "-Wcomment",
+        "message": "multi-line comment [-Wcomment]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cfed_plugin/Asm/InstrType.cpp",
+        "line": 254,
+        "severity": "warning",
+        "id": "-Wsign-compare",
+        "message": "comparison of integer expressions of different signedness: \u2018int\u2019 and \u2018unsigned int\u2019 [-Wsign-compare]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 67,
+        "severity": "warning",
+        "id": "-Wchar-subscripts",
+        "message": "array subscript has type \u2018char\u2019 [-Wchar-subscripts]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cfed_plugin/Printer/Printer.cpp",
+        "line": 78,
+        "severity": "warning",
+        "id": "-Wchar-subscripts",
+        "message": "array subscript has type \u2018char\u2019 [-Wchar-subscripts]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "AsmGen.cpp: /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/emit-rtl.h:399:41: error: use of enum \u2018memmodel\u2019 without previous declaration; UpdatePoint.cpp: /cfed_plugin/Asm/UpdatePoint.cpp:14:10: fatal error: ArmISA_Functions.h: No such file or directory; CFED_Plugin.cpp: /cfed_plugin/CFED_Plugin.cpp:10:10: fatal error: CFEDcreator.h: No such file or directory",
+    "raw": "/cfed_plugin/Asm/AsmGen.cpp:321:1: warning: multi-line comment [-Wcomment]\n  321 | //------------------------------ Private Section --------------------- \\\\\n      | ^\nIn file included from /cfed_plugin/Asm/AsmGen.cpp:10:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/emit-rtl.h:399:41: error: use of enum \u2018memmodel\u2019 without previous declaration\n  399 | extern bool need_atomic_barrier_p (enum memmodel, bool);\n      |                                         ^~~~~~~~\n/cfed_plugin/Asm/AsmGen.cpp: In static member function \u2018static rtx_insn* AsmGen::emitCmpRegInt(unsigned int, int, rtx_insn*, basic_block, bool)\u2019:\n/cfed_plugin/Asm/AsmGen.cpp:21:41: error: \u2018CC_REGNUM\u2019 was not declared in this scope; did you mean \u2018CC_REGNO_P\u2019?\n   21 |         rtx regCC = gen_rtx_REG(CCmode, CC_REGNUM);\n      |                                         ^~~~~~~~~\n      |                                         CC_REGNO_P\n/cfed_plugin/Asm/AsmGen.cpp: In static member function \u2018static rtx_insn* AsmGen::emitCmpRegReg(unsigned int, unsigned int, rtx_insn*, basic_block, bool)\u2019:\n/cfed_plugin/Asm/AsmGen.cpp:34:41: error: \u2018CC_REGNUM\u2019 was not declared in this scope; did you mean \u2018CC_REGNO_P\u2019?\n   34 |         rtx regCC = gen_rtx_REG(CCmode, CC_REGNUM);\n      |                                         ^~~~~~~~~\n      |                                         CC_REGNO_P\n/cfed_plug\n/cfed_plugin/Asm/InstrType.cpp:199:1: warning: multi-line comment [-Wcomment]\n  199 | // ----------------------- Private Section -------------------------- \\\\\n      | ^\n/cfed_plugin/Asm/InstrType.cpp: In static member function \u2018static bool InstrType::findConstIntWithNumber(rtx, unsigned int)\u2019:\n/cfed_plugin/Asm/InstrType.cpp:254:33: warning: comparison of integer expressions of different signedness: \u2018int\u2019 and \u2018unsigned int\u2019 [-Wsign-comp"
+  },
+  "high_signal_findings": [
+    {
+      "tool": "cppcheck",
+      "file": "/cfed_plugin/CFED_Plugin.cpp",
+      "line": 145,
+      "severity": "error",
+      "id": "returnDanglingLifetime",
+      "message": "Returning pointer to local variable 'msg' that will be invalid when returning.",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+      "line": 296,
+      "severity": "error",
+      "id": "uninitvar",
+      "message": "Uninitialized variable: path.upD",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/cfed_plugin/CFED_Techniques/CFCSS.cpp",
+      "line": 296,
+      "severity": "error",
+      "id": "uninitStructMember",
+      "message": "Uninitialized struct member: path.upD",
+      "signal": "HIGH_SIGNAL"
+    }
+  ],
+  "high_signal_count": 3,
+  "overall": "HIGH_SIGNAL_CANDIDATES"
+}

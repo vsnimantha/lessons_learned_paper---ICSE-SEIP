@@ -1,0 +1,755 @@
+{
+  "plugin": "CTraps-gcc-master",
+  "source_dir": "/CTraps/CTraps-gcc-master",
+  "source_files": [
+    "/CTraps/CTraps-gcc-master/Compiler/RWInst.c",
+    "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+    "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+    "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+    "/CTraps/CTraps-gcc-master/Runtime/Plugins/null_plugin.c",
+    "/CTraps/CTraps-gcc-master/Runtime/Plugins/sfi_plugin.c",
+    "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+    "/CTraps/CTraps-gcc-master/Runtime/comm_graph.cpp",
+    "/CTraps/CTraps-gcc-master/Runtime/thd_ctr.c",
+    "/CTraps/CTraps-gcc-master/Test/test.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/RWInst.c",
+        "line": 105,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'ver' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/RWInst.c",
+        "line": 63,
+        "severity": "style",
+        "id": "unusedVariable",
+        "message": "Unused variable: i",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/RWInst.c",
+        "line": 64,
+        "severity": "style",
+        "id": "unusedVariable",
+        "message": "Unused variable: str",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/RWInst.c",
+        "line": 64,
+        "severity": "style",
+        "id": "unusedVariable",
+        "message": "Unused variable: op",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/RWInst.c",
+        "line": 66,
+        "severity": "style",
+        "id": "unusedVariable",
+        "message": "Unused variable: stmt",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 332,
+        "severity": "style",
+        "id": "shadowVariable",
+        "message": "Local variable 'Rd_call' shadows outer variable",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 429,
+        "severity": "style",
+        "id": "shadowVariable",
+        "message": "Local variable 'Wr_call' shadows outer variable",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 103,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'pt' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 342,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'e' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 439,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'e' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 343,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'e' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 363,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'stmt' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 396,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'hdrstmt' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c",
+        "line": 440,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'e' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+        "line": 66,
+        "severity": "warning",
+        "id": "nullPointerRedundantCheck",
+        "message": "Either the condition 'p!=NULL' is redundant or there is possible null pointer dereference: p.",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+        "line": 66,
+        "severity": "error",
+        "id": "nullPointer",
+        "message": "Null pointer dereference",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+        "line": 38,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+        "line": 110,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'addr' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+        "line": 143,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'addr' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 73,
+        "severity": "warning",
+        "id": "nullPointerRedundantCheck",
+        "message": "Either the condition 'p!=NULL' is redundant or there is possible null pointer dereference: p.",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 73,
+        "severity": "error",
+        "id": "nullPointer",
+        "message": "Null pointer dereference",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 119,
+        "severity": "style",
+        "id": "variableScope",
+        "message": "The scope of the variable 'amt' can be reduced.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 120,
+        "severity": "style",
+        "id": "variableScope",
+        "message": "The scope of the variable 'max' can be reduced.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 39,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 148,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'origPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 157,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'newc' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 119,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'amt' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+        "line": 120,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'max' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/null_plugin.c",
+        "line": 49,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'addr' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/null_plugin.c",
+        "line": 49,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'oldPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/null_plugin.c",
+        "line": 49,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'newPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/null_plugin.c",
+        "line": 55,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'addr' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/null_plugin.c",
+        "line": 55,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'oldPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/null_plugin.c",
+        "line": 55,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'newPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/sfi_plugin.c",
+        "line": 57,
+        "severity": "warning",
+        "id": "wrongPrintfScanfArgNum",
+        "message": "fprintf format string requires 0 parameters but 5 are given.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/sfi_plugin.c",
+        "line": 51,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'newPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/sfi_plugin.c",
+        "line": 51,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'oldPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 470,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_uint",
+        "message": "%x in format string (no. 1) requires 'unsigned int' but the argument type is 'void *'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 470,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_uint",
+        "message": "%x in format string (no. 3) requires 'unsigned int' but the argument type is 'void *'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 84,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 86,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 90,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 134,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 135,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 136,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 137,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 139,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 140,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 233,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 352,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 352,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'oldPC' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 364,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'pc' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 352,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'oldPC' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 364,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'pc' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 431,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'e' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/comm_graph.cpp",
+        "line": 46,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/comm_graph.cpp",
+        "line": 42,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/CTraps/CTraps-gcc-master/Test/test.c",
+        "line": 25,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_uint",
+        "message": "%x in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int *'.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/CTraps/CTraps-gcc-master/Compiler/RWInst.c:105:style:constParameterPointer:Parameter 'ver' can be declared as pointer to const\n/CTraps/CTraps-gcc-master/Compiler/RWInst.c:63:style:unusedVariable:Unused variable: i\n/CTraps/CTraps-gcc-master/Compiler/RWInst.c:64:style:unusedVariable:Unused variable: str\n/CTraps/CTraps-gcc-master/Compiler/RWInst.c:64:style:unusedVariable:Unused variable: op\n/CTraps/CTraps-gcc-master/Compiler/RWInst.c:66:style:unusedVariable:Unused variable: stmt\n/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c:332:style:shadowVariable:Local variable 'Rd_call' shadows outer variable\n/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c:429:style:shadowVariable:Local variable 'Wr_call' shadows outer variable\n/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c:103:style:constVariablePointer:Variable 'pt' can be declared as pointer to const\n/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c:342:style:constVariablePointer:Variable 'e' can be declared as pointer to const\n/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c:439:style:constVariablePointer:Variable 'e' can be declared as pointer to const\n/CTraps/CTrap"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS_PARTIAL",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/usr/include/c++/13/backward/backward_warning.h",
+        "line": 32,
+        "severity": "warning",
+        "id": "-Wcpp",
+        "message": "#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 59,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018v\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 122,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018a\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 122,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018b\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 122,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018c\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 122,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018d\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 122,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018e\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 165,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018v\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 352,
+        "severity": "warning",
+        "id": "-Wunused-variable",
+        "message": "unused variable \u2018oldPC\u2019 [-Wunused-variable]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 364,
+        "severity": "warning",
+        "id": "-Wunused-variable",
+        "message": "unused variable \u2018pc\u2019 [-Wunused-variable]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 470,
+        "severity": "warning",
+        "id": "-Wformat=",
+        "message": "format \u2018%x\u2019 expects argument of type \u2018unsigned int\u2019, but argument 3 has type \u2018void*\u2019 [-Wformat=]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 470,
+        "severity": "warning",
+        "id": "-Wformat=",
+        "message": "format \u2018%x\u2019 expects argument of type \u2018unsigned int\u2019, but argument 4 has type \u2018pthread_t\u2019 {aka \u2018long unsigned int\u2019} [-Wformat=]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 470,
+        "severity": "warning",
+        "id": "-Wformat=",
+        "message": "format \u2018%x\u2019 expects argument of type \u2018unsigned int\u2019, but argument 5 has type \u2018void*\u2019 [-Wformat=]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/RWCalls.cpp",
+        "line": 431,
+        "severity": "warning",
+        "id": "-Wunused-variable",
+        "message": "unused variable \u2018e\u2019 [-Wunused-variable]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/usr/include/c++/13/backward/backward_warning.h",
+        "line": 32,
+        "severity": "warning",
+        "id": "-Wcpp",
+        "message": "#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/thd_ctr.c",
+        "line": 20,
+        "severity": "warning",
+        "id": "warning",
+        "message": "\"_GNU_SOURCE\" redefined",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/CTraps/CTraps-gcc-master/Runtime/thd_ctr.c",
+        "line": 58,
+        "severity": "warning",
+        "id": "-Wreturn-type",
+        "message": "no return statement in function returning non-void [-Wreturn-type]",
+        "signal": "HIGH_SIGNAL"
+      }
+    ],
+    "reason": "RWInst.c: /CTraps/CTraps-gcc-master/Compiler/RWInst.c:27:10: fatal error; ReadWriteCalls.c: /CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c:27:10: fat; cganom_plugin.cpp: /CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp:25",
+    "raw": "/CTraps/CTraps-gcc-master/Compiler/RWInst.c:27:10: fatal error: tree-flow.h: No such file or directory\n   27 | #include <tree-flow.h>\n      |          ^~~~~~~~~~~~~\ncompilation terminated.\n\n/CTraps/CTraps-gcc-master/Compiler/ReadWriteCalls.c:27:10: fatal error: tree-flow.h: No such file or directory\n   27 | #include <tree-flow.h>\n      |          ^~~~~~~~~~~~~\ncompilation terminated.\n\nIn file included from /usr/include/c++/13/backward/hash_map:60,\n                 from /CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp:22:\n/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]\n   32 | #warning \\\n      |  ^~~~~~~\n/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp:25:10: fatal error: ct_plugin.h: No such file or directory\n   25 | #include \"ct_plugin.h\"\n      |          ^~~~~~~~~~~~~\ncompilation terminated.\n\nIn file included from /usr/include/c++/13/backward/hash_map:60,\n                 from /CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp:22:\n/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functional"
+  },
+  "high_signal_findings": [
+    {
+      "tool": "cppcheck",
+      "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+      "line": 66,
+      "severity": "warning",
+      "id": "nullPointerRedundantCheck",
+      "message": "Either the condition 'p!=NULL' is redundant or there is possible null pointer dereference: p.",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cganom_plugin.cpp",
+      "line": 66,
+      "severity": "error",
+      "id": "nullPointer",
+      "message": "Null pointer dereference",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+      "line": 73,
+      "severity": "warning",
+      "id": "nullPointerRedundantCheck",
+      "message": "Either the condition 'p!=NULL' is redundant or there is possible null pointer dereference: p.",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/CTraps/CTraps-gcc-master/Runtime/Plugins/cgtest_plugin.cpp",
+      "line": 73,
+      "severity": "error",
+      "id": "nullPointer",
+      "message": "Null pointer dereference",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "gxx",
+      "file": "/CTraps/CTraps-gcc-master/Runtime/thd_ctr.c",
+      "line": 58,
+      "severity": "warning",
+      "id": "-Wreturn-type",
+      "message": "no return statement in function returning non-void [-Wreturn-type]",
+      "signal": "HIGH_SIGNAL"
+    }
+  ],
+  "high_signal_count": 5,
+  "overall": "HIGH_SIGNAL_CANDIDATES"
+}

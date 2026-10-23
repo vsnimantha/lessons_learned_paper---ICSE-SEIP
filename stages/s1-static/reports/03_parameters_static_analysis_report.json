@@ -1,0 +1,23 @@
+{
+  "plugin": "03_parameters",
+  "source_dir": "/rofirrim_github/gcc-plugins-master/03_parameters",
+  "source_files": [
+    "/rofirrim_github/gcc-plugins-master/03_parameters/my_parameters.cc"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_CLEAN",
+    "findings": [],
+    "reason": "",
+    "raw": ""
+  },
+  "gxx": {
+    "outcome": "PARSED_CLEAN",
+    "findings": [],
+    "reason": "",
+    "raw": "\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "CLEAN"
+}

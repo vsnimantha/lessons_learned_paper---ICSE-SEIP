@@ -1,0 +1,62 @@
+{
+  "plugin": "gcc-plugin",
+  "source_dir": "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin",
+  "source_files": [
+    "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.cpp",
+    "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgraphs.cpp",
+    "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/function_decl.cpp"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.h",
+        "line": 35,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'Callgrapher' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgraphs.cpp",
+        "line": 98,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'version' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.cpp",
+        "line": 52,
+        "severity": "style",
+        "id": "shadowVariable",
+        "message": "Local variable 'fn' shadows outer variable",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.cpp",
+        "line": 19,
+        "severity": "performance",
+        "id": "passedByValueCallback",
+        "message": "Function parameter 'dbfile' should be passed by const reference. However it seems that 'Callgrapher' is a callback function.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.h:35:style:noExplicitConstructor:Class 'Callgrapher' has a constructor with 1 argument that is not explicit.\n/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgraphs.cpp:98:style:constParameterPointer:Parameter 'version' can be declared as pointer to const\n/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.cpp:52:style:shadowVariable:Local variable 'fn' shadows outer variable\n/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.cpp:19:performance:passedByValueCallback:Function parameter 'dbfile' should be passed by const reference. However it seems that 'Callgrapher' is a callback function.\n"
+  },
+  "gxx": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "callgrapher.cpp: /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-expr.h:76:11: error: \u2018AGGREGATE_TYPE_P\u2019 was not declared in this scope; callgraphs.cpp: /KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgraphs; function_decl.cpp: /KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/function_d",
+    "raw": "In file included from /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple.h:26,\n                 from /KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.cpp:10:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-expr.h: In function \u2018bool is_gimple_reg_type(tree)\u2019:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-expr.h:76:11: error: \u2018AGGREGATE_TYPE_P\u2019 was not declared in this scope\n   76 |   return !AGGREGATE_TYPE_P (type);\n      |           ^~~~~~~~~~~~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-expr.h:76:11: note: the macro \u2018AGGREGATE_TYPE_P\u2019 had not yet been defined\nIn file included from /KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/function_decl.h:6,\n                 from /KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.h:12,\n                 from /KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgrapher.cpp:16:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/tree.h:657: note: it was later defined here\n  657 | #define AGGREGATE_TYPE_P(TYPE) \\\n      | \n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-expr.h: In function \u2018bool is_gimple_variable(tree)\u2019:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/i\n/KayrebtCallgraphs/KayrebtCallgraphs-dev/gcc-plugin/callgraphs.cpp:81:9: error: could not convert \u2018{{GIMPLE_PASS, \"findcalls\", OPTGROUP_NONE, nullptr, find_calls, nullptr, nullptr, 0, TV_NONE, (1 << 3), 0, 0, 0, 0}}\u2019 from \u2018<brace-enclosed initializer list>\u2019 to \u2018gimple_opt_pass\u2019\n   81 |         };\n      |         ^\n      |         |\n      |         <brace-enclosed initializer list>\n/Desktop/KU_Leuven_App_"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

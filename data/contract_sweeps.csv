@@ -1,0 +1,16 @@
+config,stackleak_instrumented,arm_ssp_protected,oi_accepted_silently,latent_entropy_original_instrumented,latent_entropy_patched_instrumented,cprintf_ps_rewritten,provenance
+O1,2,7,1,no,yes,10,transcribed from the adjudication draft (per-configuration table); verify against stage 5 raw runs
+O2,3,7,1,no,yes,10,same
+O3,3,7,2,no,yes,10,same
+OS,2,7,0,no,yes,10,same
+NO_INLINE,2,8,0,yes,yes,10,same
+INLINE_ALL,3,7,2,no,yes,10,same
+NO_VECT,3,7,2,no,yes,10,same
+VECT,3,7,2,no,yes,10,same
+NO_TREE_OPTS,3,7,1,no,yes,10,same
+EXTRA_TREE_OPTS,3,7,1,no,yes,10,same
+LTO,2,8,4,no,yes,8,same
+LTO_IPA,2,8,4,no,yes,8,same
+NO_ALIAS,3,7,1,no,yes,10,same
+STRICT_ALIAS,3,7,1,no,yes,10,same
+O3_LOOPS,3,7,2,no,yes,10,same

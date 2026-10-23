@@ -1,0 +1,105 @@
+{
+  "plugin": "struck_Leak",
+  "source_dir": "/struck_Leak",
+  "source_files": [
+    "/struck_Leak/structleak_plugin.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "/struck_Leak/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.; /struck_Leak/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.",
+    "raw": "/struck_Leak/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 63,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018name\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 63,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018args\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 63,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018flags\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 77,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018event_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 77,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 109,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 256,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 256,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/struck_Leak/structleak_plugin.c",
+        "line": 256,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/struck_Leak/structleak_plugin.c: In function \u2018tree_node* handle_user_attribute(tree_node**, tree, tree, int, bool*)\u2019:\n/struck_Leak/structleak_plugin.c:63:52: warning: unused parameter \u2018name\u2019 [-Wunused-parameter]\n   63 | static tree handle_user_attribute(tree *node, tree name, tree args, int flags, bool *no_add_attrs)\n      |                                               ~~~~~^~~~\n/struck_Leak/structleak_plugin.c:63:63: warning: unused parameter \u2018args\u2019 [-Wunused-parameter]\n   63 | static tree handle_user_attribute(tree *node, tree name, tree args, int flags, bool *no_add_attrs)\n      |                                                          ~~~~~^~~~\n/struck_Leak/structleak_plugin.c:63:73: warning: unused parameter \u2018flags\u2019 [-Wunused-parameter]\n   63 | static tree handle_user_attribute(tree *node, tree name, tree args, int flags, bool *no_add_attrs)\n      |                                                                     ~~~~^~~~~\n/struck_Leak/structleak_plugin.c: In function \u2018void register_attributes(void*, void*)\u2019:\n/Experimentation_Pr\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

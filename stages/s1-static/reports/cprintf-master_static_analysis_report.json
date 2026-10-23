@@ -1,0 +1,154 @@
+{
+  "plugin": "cprintf-master",
+  "source_dir": "/cprintf/cprintf-master",
+  "source_files": [
+    "/cprintf/cprintf-master/cprintf.cpp",
+    "/cprintf/cprintf-master/gcc_hell.cpp",
+    "/cprintf/cprintf-master/log.cpp",
+    "/cprintf/cprintf-master/printfun.cpp"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/cprintf/cprintf-master/log.h",
+        "line": 23,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'log_stream' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cprintf/cprintf-master/gcc_hell.h",
+        "line": 15,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Struct 'cprintf_pass' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cprintf/cprintf-master/gcc_hell.cpp",
+        "line": 422,
+        "severity": "style",
+        "id": "constVariableReference",
+        "message": "Variable 's' can be declared as reference to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cprintf/cprintf-master/gcc_hell.cpp",
+        "line": 431,
+        "severity": "style",
+        "id": "constVariableReference",
+        "message": "Variable 's' can be declared as reference to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cprintf/cprintf-master/log.cpp",
+        "line": 50,
+        "severity": "style",
+        "id": "shadowVariable",
+        "message": "Local variable 'err' shadows outer variable",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/cprintf/cprintf-master/printfun.cpp",
+        "line": 11,
+        "severity": "style",
+        "id": "constParameterReference",
+        "message": "Parameter 'func' can be declared as reference to const",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/cprintf/cprintf-master/log.h:23:style:noExplicitConstructor:Class 'log_stream' has a constructor with 1 argument that is not explicit.\n/cprintf/cprintf-master/gcc_hell.h:15:style:noExplicitConstructor:Struct 'cprintf_pass' has a constructor with 1 argument that is not explicit.\n/cprintf/cprintf-master/gcc_hell.cpp:422:style:constVariableReference:Variable 's' can be declared as reference to const\n/cprintf/cprintf-master/gcc_hell.cpp:431:style:constVariableReference:Variable 's' can be declared as reference to const\n/cprintf/cprintf-master/log.cpp:50:style:shadowVariable:Local variable 'err' shadows outer variable\n/cprintf/cprintf-master/printfun.cpp:11:style:constParameterReference:Parameter 'func' can be declared as reference to const\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/log.h",
+        "line": 6,
+        "severity": "warning",
+        "id": "-Wbuiltin-declaration-mismatch",
+        "message": "built-in function \u2018log\u2019 declared as non-function [-Wbuiltin-declaration-mismatch]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/log.h",
+        "line": 6,
+        "severity": "warning",
+        "id": "-Wbuiltin-declaration-mismatch",
+        "message": "built-in function \u2018log\u2019 declared as non-function [-Wbuiltin-declaration-mismatch]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/gcc_hell.cpp",
+        "line": 61,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018t\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/gcc_hell.cpp",
+        "line": 61,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/gcc_hell.cpp",
+        "line": 127,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018handled_all_ops\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/gcc_hell.cpp",
+        "line": 251,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018wi\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/log.h",
+        "line": 6,
+        "severity": "warning",
+        "id": "-Wbuiltin-declaration-mismatch",
+        "message": "built-in function \u2018log\u2019 declared as non-function [-Wbuiltin-declaration-mismatch]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/cprintf/cprintf-master/log.h",
+        "line": 6,
+        "severity": "warning",
+        "id": "-Wbuiltin-declaration-mismatch",
+        "message": "built-in function \u2018log\u2019 declared as non-function [-Wbuiltin-declaration-mismatch]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "In file included from /cprintf/cprintf-master/cprintf.cpp:8:\n/cprintf/cprintf-master/log.h:6:11: warning: built-in function \u2018log\u2019 declared as non-function [-Wbuiltin-declaration-mismatch]\n    6 | namespace log {\n      |           ^~~\n\nIn file included from /cprintf/cprintf-master/gcc_hell.cpp:2:\n/cprintf/cprintf-master/log.h:6:11: warning: built-in function \u2018log\u2019 declared as non-function [-Wbuiltin-declaration-mismatch]\n    6 | namespace log {\n      |           ^~~\n/cprintf/cprintf-master/gcc_hell.cpp: In static member function \u2018static tree_node* gcc_hell::cprintf_pass::callback_op(tree_node**, int*, void*)\u2019:\n/cprintf/cprintf-master/gcc_hell.cpp:61:38: warning: unused parameter \u2018t\u2019 [-Wunused-parameter]\n   61 | tree cprintf_pass::callback_op(tree *t, int *, void *data)\n      |                                ~~~~~~^\n/cprintf/cprintf-master/gcc_hell.cpp:61:54: warning: unused parameter \u2018data\u2019 [-Wunused-parameter]\n   61 | tree cprintf_pass::callback_op(tree *t, int *, void *data)\n      |                                                ~~~~~~^~~~\n/cprintf/cprintf-master/gcc_hell.cpp: In static member function \u2018static tree_node* gcc_hell::cprintf_pass::callback_stmt(gimple_stmt_iterator*, bool*, walk_stmt_info*)\u2019:\n\nIn file included from /cprintf"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "LOW_SIGNAL_ONLY"
+}

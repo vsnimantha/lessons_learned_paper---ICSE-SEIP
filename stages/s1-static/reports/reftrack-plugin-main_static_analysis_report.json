@@ -1,0 +1,1395 @@
+{
+  "plugin": "reftrack-plugin-main",
+  "source_dir": "/reftrack-plugin/reftrack-plugin-main",
+  "source_files": [
+    "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/array.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/array2.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/block_test.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/calloc.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/complex2.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/cycle.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/dual_param.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/fun_call.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/hash_test.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/identity.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/identity2.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/loop.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/nested.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/realloc.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/sample.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/self_assign.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/simple.c",
+    "/reftrack-plugin/reftrack-plugin-main/testcases/static_assign.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/array.c",
+        "line": 36,
+        "severity": "style",
+        "id": "knownConditionTrueFalse",
+        "message": "Condition 'rp->im>=0xab' is always true",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 143,
+        "severity": "portability",
+        "id": "invalidPrintfArgType_uint",
+        "message": "%lu in format string (no. 2) requires 'unsigned long' but the argument type is 'size_t {aka unsigned long}'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/array.c",
+        "line": 37,
+        "severity": "style",
+        "id": "redundantInitialization",
+        "message": "Redundant initialization for 'rp3'. The initialized value is overwritten before it is read.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 73,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'rtp' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 73,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 140,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 177,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rv)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 180,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 189,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)rv' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 189,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)((void*)rv+sizeof(struct reftrack_))' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 205,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)rv' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 216,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 249,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 271,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/array.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/array.c",
+        "line": 41,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/array.c",
+        "line": 41,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp3)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/array2.c",
+        "line": 11,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1006,
+        "severity": "warning",
+        "id": "uninitMemberVar",
+        "message": "Member variable 'reftrack_pass::cur_fn' is not initialized in the constructor.",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 69,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'xstring' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 70,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'xstring' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 71,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'xstring' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 72,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'xstring' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 73,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'xstring' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1006,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Struct 'reftrack_pass' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1497,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Struct 'reftrack_cleanup' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1315,
+        "severity": "style",
+        "id": "multiCondition",
+        "message": "Expression is always true because 'else if' condition is opposite to previous condition at line 1312.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 821,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 79,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'delim' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 229,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'delim' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/block_test.c",
+        "line": 17,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/block_test.c",
+        "line": 14,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/block_test.c",
+        "line": 26,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/calloc.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/calloc.c",
+        "line": 27,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 69,
+        "severity": "error",
+        "id": "memleak",
+        "message": "Memory leak: dummy",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 38,
+        "severity": "warning",
+        "id": "selfAssignment",
+        "message": "Redundant assignment of 'p1' to itself.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 32,
+        "severity": "style",
+        "id": "variableScope",
+        "message": "The scope of the variable 'obp' can be reduced.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 34,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'p2' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 46,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'rp' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 61,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'dummy' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 61,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'unused' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 67,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'rv2' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 41,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 68,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rv)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 23,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'C::rp' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 36,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'obp' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 38,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'p1' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 34,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'p2' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 49,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'rp' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 61,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'dummy' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 61,
+        "severity": "style",
+        "id": "unusedAllocatedMemory",
+        "message": "Variable 'dummy' is allocated memory that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex.c",
+        "line": 61,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'unused' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex2.c",
+        "line": 17,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex2.c",
+        "line": 14,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex2.c",
+        "line": 26,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/complex2.c",
+        "line": 60,
+        "severity": "style",
+        "id": "unusedVariable",
+        "message": "Unused variable: ia",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/cycle.c",
+        "line": 47,
+        "severity": "warning",
+        "id": "nullPointer",
+        "message": "Possible null pointer dereference: prev",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/cycle.c",
+        "line": 48,
+        "severity": "error",
+        "id": "nullPointerArithmetic",
+        "message": "Overflow in pointer arithmetic, NULL pointer is subtracted.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/cycle.c",
+        "line": 13,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/cycle.c",
+        "line": 44,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(np)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/cycle.c",
+        "line": 48,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(head)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/dual_param.c",
+        "line": 25,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'tmp' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/dual_param.c",
+        "line": 12,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/dual_param.c",
+        "line": 27,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/dual_param.c",
+        "line": 25,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'tmp' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/fun_call.c",
+        "line": 43,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'tmp' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/fun_call.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/fun_call.c",
+        "line": 30,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/fun_call.c",
+        "line": 46,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/fun_call.c",
+        "line": 23,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'C::rp' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/fun_call.c",
+        "line": 43,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'tmp' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/hash_test.c",
+        "line": 36,
+        "severity": "style",
+        "id": "unreachableCode",
+        "message": "Statements following noreturn function 'exit()' will never be executed.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/hash_test.c",
+        "line": 19,
+        "severity": "style",
+        "id": "constParameter",
+        "message": "Parameter 'argv' can be declared as const array",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/hash_test.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/hash_test.c",
+        "line": 61,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(cur_elem)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/identity.c",
+        "line": 30,
+        "severity": "style",
+        "id": "redundantInitialization",
+        "message": "Redundant initialization for 'rp'. The initialized value is overwritten before it is read.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/identity.c",
+        "line": 32,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'rp2' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/identity.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/identity.c",
+        "line": 36,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/identity.c",
+        "line": 32,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'rp2' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/identity2.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/identity2.c",
+        "line": 34,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/loop.c",
+        "line": 33,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'dummy' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/loop.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/loop.c",
+        "line": 36,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/loop.c",
+        "line": 23,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'C::rp' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/loop.c",
+        "line": 33,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'dummy' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/nested.c",
+        "line": 35,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/nested.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/nested.c",
+        "line": 26,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/nested.c",
+        "line": 46,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/nested.c",
+        "line": 62,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(fp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/nested.c",
+        "line": 62,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(fp->ap)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/realloc.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/realloc.c",
+        "line": 42,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/realloc.c",
+        "line": 26,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'p' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/sample.c",
+        "line": 23,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/sample.c",
+        "line": 32,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/sample.c",
+        "line": 20,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/self_assign.c",
+        "line": 35,
+        "severity": "warning",
+        "id": "selfAssignment",
+        "message": "Redundant assignment of 'rp' to itself.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/self_assign.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/self_assign.c",
+        "line": 36,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/self_assign.c",
+        "line": 23,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'C::rp' is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 256,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'p' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/simple.c",
+        "line": 22,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'ptr_unused' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/simple.c",
+        "line": 27,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/hrcmm.h",
+        "line": 265,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'ctx' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/simple.c",
+        "line": 23,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'ptr_unused' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/static_assign.c",
+        "line": 15,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/static_assign.c",
+        "line": 37,
+        "severity": "portability",
+        "id": "arithOperationsOnVoidPointer",
+        "message": "'(void*)(rp)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/reftrack-plugin/reftrack-plugin-main/testcases/static_assign.c",
+        "line": 23,
+        "severity": "style",
+        "id": "unusedStructMember",
+        "message": "struct member 'C::rp' is never used.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/reftrack-plugin/reftrack-plugin-main/testcases/array.c:36:style:knownConditionTrueFalse:Condition 'rp->im>=0xab' is always true\n/reftrack-plugin/reftrack-plugin-main/hrcmm.h:143:portability:invalidPrintfArgType_uint:%lu in format string (no. 2) requires 'unsigned long' but the argument type is 'size_t {aka unsigned long}'.\n/reftrack-plugin/reftrack-plugin-main/testcases/array.c:37:style:redundantInitialization:Redundant initialization for 'rp3'. The initialized value is overwritten before it is read.\n/reftrack-plugin/reftrack-plugin-main/hrcmm.h:73:style:constVariablePointer:Variable 'rtp' can be declared as pointer to const\n/reftrack-plugin/reftrack-plugin-main/hrcmm.h:73:portability:arithOperationsOnVoidPointer:'(void*)(p)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\n/reftrack-plugin/reftrack-plugin-main/hrcmm.h:140:portability:arithOperationsOnVoidPointer:'(void*)p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\n/reftrack-plugin/reftrack-plugin-main/hrcmm.h:177:portability:arithOperationsOnVoidPointer:'(void*)(rv)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined.\n/reftrack-plugin/reftrack-plugin-main/hrcmm.h:180:portability:arithOperationsOnVoidPointer:'(void*)(p)' is of type 'void *'. When using void pointers in calcul"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS_PARTIAL",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::fn_list\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::ref_structs\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::refcount_fields\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::ignored_fns\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::destructor_fns\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::orig_alloc_fn\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::orig_free_fn\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::reftrack_alloc_fn\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::reftrack_free_fn\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::default_addref_fn\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::default_removeref_fn\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::default_addref_fn_name\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::default_removeref_fn_name\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 192,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::Globals::replace_memfn\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 739,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 750,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 750,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 780,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 806,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 818,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 849,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018name\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 850,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018flags\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 850,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018no_add_attrs\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 947,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018event_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 947,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1056,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018bb\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1067,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018bb\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1162,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::gimple_build_info::use_tmp\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1162,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::gimple_build_info::tmp_type\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1147,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018fn\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1178,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018fn\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1178,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gsi\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1266,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018fn\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1531,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::gimple_build_info::tmp_type\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+        "line": 1706,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018reftrack::gimple_build_info::tmp_type\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "array.c: /reftrack-plugin/reftrack-plugin-main/testcases/array.c:6:10: ; array2.c: /reftrack-plugin/reftrack-plugin-main/testcases/array2.c:6:10:; block_test.c: /reftrack-plugin/reftrack-plugin-main/testcases/block_test.c:3",
+    "raw": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc:192:5: warning: missing initializer for member \u2018reftrack::Globals::fn_list\u2019 [-Wmissing-field-initializers]\n  192 |     };\n      |     ^\n/reftrack-plugin/reftrack-plugin-main/reftrack.cc:192:5: warning: missing initializer for member \u2018reftrack::Globals::ref_structs\u2019 [-Wmissing-field-initializers]\n/reftrack-plugin/reftrack-plugin-main/reftrack.cc:192:5: warning: missing initializer for member \u2018reftrack::Globals::refcount_fields\u2019 [-Wmissing-field-initializers]\n/reftrack-plugin/reftrack-plugin-main/reftrack.cc:192:5: warning: missing initializer for member \u2018reftrack::Globals::ignored_fns\u2019 [-Wmissing-field-initializers]\n/reftrack-plugin/reftrack-plugin-main/reftrack.cc:192:5: warning: missing initializer for member \u2018reftrack::Globals::destructor_fns\u2019 [-Wmissing-field-initializers]\n/reftrack-plugin/reftrack-plugin-main/reftrack.cc:192:5: warning: missing initializer for member \u2018reftrack::Globals::orig_alloc_fn\u2019 [-Wmissing-field-initializers]\n/Desktop/KU_Leuven\n/reftrack-plugin/reftrack-plugin-main/testcases/array.c:6:10: fatal error: hrcmm.h: No such file or directory\n    6 | #include \"hrcmm.h\"\n      |          ^~~~~~~~~\ncompilation terminated.\n\n/reftrack-plugin/reftrack-plugin-main/testcases/array2.c:6:10: fatal error: hrcmm.h: No such file or directory\n    6 | #include \"hrcmm.h\"\n      |         "
+  },
+  "high_signal_findings": [
+    {
+      "tool": "cppcheck",
+      "file": "/reftrack-plugin/reftrack-plugin-main/reftrack.cc",
+      "line": 1006,
+      "severity": "warning",
+      "id": "uninitMemberVar",
+      "message": "Member variable 'reftrack_pass::cur_fn' is not initialized in the constructor.",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/reftrack-plugin/reftrack-plugin-main/testcases/cycle.c",
+      "line": 47,
+      "severity": "warning",
+      "id": "nullPointer",
+      "message": "Possible null pointer dereference: prev",
+      "signal": "HIGH_SIGNAL"
+    }
+  ],
+  "high_signal_count": 2,
+  "overall": "HIGH_SIGNAL_CANDIDATES"
+}

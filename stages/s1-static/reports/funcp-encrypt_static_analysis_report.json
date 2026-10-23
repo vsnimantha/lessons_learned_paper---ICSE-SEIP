@@ -1,0 +1,33 @@
+{
+  "plugin": "funcp-encrypt",
+  "source_dir": "/funcp-encrypt",
+  "source_files": [
+    "/funcp-encrypt/funcp-encrypt.cc"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/funcp-encrypt/funcp-encrypt.cc",
+        "line": 51,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'funcp_pass' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/funcp-encrypt/funcp-encrypt.cc:51:style:noExplicitConstructor:Class 'funcp_pass' has a constructor with 1 argument that is not explicit.\n"
+  },
+  "gxx": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "funcp-encrypt.cc: /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/value-relation.h:95:6: error: variable or field \u2018adjust_equivalence_range\u2019 declared void",
+    "raw": "In file included from /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/value-query.h:25,\n                 from /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/tree-ssa-propagate.h:25,\n                 from /funcp-encrypt/funcp-encrypt.cc:18:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/value-relation.h:95:6: error: variable or field \u2018adjust_equivalence_range\u2019 declared void\n   95 | void adjust_equivalence_range (vrange &range);\n      |      ^~~~~~~~~~~~~~~~~~~~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/value-relation.h:95:32: error: \u2018vrange\u2019 was not declared in this scope\n   95 | void adjust_equivalence_range (vrange &range);\n      |                                ^~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/value-relation.h:95:40: error: \u2018range\u2019 was not declared in this scope\n   95 | void adjust_equivalence_range (vrange &range);\n      |                                        ^~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/value-relation.h:112:51: error: \u2018vrange\u2019 has not been declared\n  112 |   relation_kind validate_relation (relation_kind, vrange &, vrange &);\n      |                                                   ^~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/value-relation.h:112:61: error: \u2018vrange\u2019 has not been declared\n  112 |   relation_kind validate_relation (relation_kind, vrange &, vrange &);\n      |                                                     \n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

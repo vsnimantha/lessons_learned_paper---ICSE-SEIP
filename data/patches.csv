@@ -1,0 +1,7 @@
+plugin,findings,lines_added,lines_removed
+CFED,D2;D3,2,2
+SecRetAddress,D1,4,0
+Latent Entropy,D5,2,0
+Instrument Attribute,D4,5,4
+cprintf,D6;D7;D8;D9;D10,12,1
+gcc_assert_introspect,D11;D12;D13;D14;D15,21,12

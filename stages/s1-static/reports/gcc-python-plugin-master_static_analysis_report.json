@@ -1,0 +1,94 @@
+{
+  "plugin": "gcc-python-plugin-master",
+  "source_dir": "/gcc_python_plugin/gcc-python-plugin-master",
+  "source_files": [
+    "/gcc_python_plugin/gcc-python-plugin-master/demo.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-callgraph.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-cfg.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-constant.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-declaration.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-diagnostics.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-function.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-gimple.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-location.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-option.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-rtl.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-tree.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-type.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-variable.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-attribute.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-callbacks.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-callgraph.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-cfg.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-closure.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-diagnostics.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-function.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-gimple.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-location.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-option.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-parameter.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-pass.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-pretty-printer.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-rtl.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-tree.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-variable.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-version.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python-wrapper.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/gcc-python.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/print-gcc-version.c",
+    "/gcc_python_plugin/gcc-python-plugin-master/test.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "/gcc_python_plugin/gcc-python-plugin-master/gcc-python.h:244:error:preprocessorErrorDirective:failed to expand 'DECLARE_SIMPLE_WRAPPER', it is invalid to use a preprocessor directive as macro parameter; /gcc_python_plugin/gcc-python-plugin-master/gcc-python.h:244:error:preprocessorErrorDirective:failed to expand 'DECLARE_SIMPLE_WRAPPER', it is invalid to use a preprocessor directive as macro parameter",
+    "raw": "/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-callgraph.c:38:error:unknownMacro:There is an unknown macro here somewhere. Configuration is required. If GCC_IMPLEMENT_PRIVATE_API is a macro then please configure it.\n/gcc_python_plugin/gcc-python-plugin-master/demo.c:48:error:missingReturn:Found an exit path from function with non-void return type that has missing return statement\n/gcc_python_plugin/gcc-python-plugin-master/demo.c:58:error:missingReturn:Found an exit path from function with non-void return type that has missing return statement\n/gcc_python_plugin/gcc-python-plugin-master/demo.c:70:error:missingReturn:Found an exit path from function with non-void return type that has missing return statement\n/gcc_python_plugin/gcc-python-plugin-master/demo.c:84:error:missingReturn:Found an exit path from function with non-void return type that has missing return statement\n/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-cfg.c:56:error:unknownMacro:There is an unknown macro here somewhere. Configuration is required. If GCC_IMPLEMENT_PRIVATE_API is a macro then please configure it.\n/gcc_python_plugin/gcc-python-plugin-master/demo.c:93:style:variableScope:The scope of the variable 'item' can be reduced.\n/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-diagnostics.c:24:error:unknownMacro:There is an unknown macro here somewhere. C"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS_PARTIAL",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/gcc_python_plugin/gcc-python-plugin-master/print-gcc-version.c",
+        "line": 26,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018argc\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc_python_plugin/gcc-python-plugin-master/print-gcc-version.c",
+        "line": 26,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018argv\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc_python_plugin/gcc-python-plugin-master/test.c",
+        "line": 41,
+        "severity": "warning",
+        "id": "-Wformat=",
+        "message": "format \u2018%i\u2019 expects argument of type \u2018int\u2019, but argument 2 has type \u2018char*\u2019 [-Wformat=]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/gcc_python_plugin/gcc-python-plugin-master/test.c",
+        "line": 41,
+        "severity": "warning",
+        "id": "-Wformat=",
+        "message": "format \u2018%s\u2019 expects a matching \u2018char*\u2019 argument [-Wformat=]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "demo.c: /gcc_python_plugin/gcc-python-plugin-master/demo.c:21:10: fata; gcc-callgraph.c: /gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-call; gcc-cfg.c: /gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-cfg.",
+    "raw": "/gcc_python_plugin/gcc-python-plugin-master/demo.c:21:10: fatal error: Python.h: No such file or directory\n   21 | #include <Python.h>\n      |          ^~~~~~~~~~\ncompilation terminated.\n\n/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-callgraph.c:20:10: fatal error: gcc-callgraph.h: No such file or directory\n   20 | #include \"gcc-callgraph.h\"\n      |          ^~~~~~~~~~~~~~~~~\ncompilation terminated.\n\n/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-cfg.c:20:10: fatal error: gcc-cfg.h: No such file or directory\n   20 | #include \"gcc-cfg.h\"\n      |          ^~~~~~~~~~~\ncompilation terminated.\n\nIn file included from /gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-constant.c:20:\n/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-common.h:36:10: fatal error: gcc-public-types.h: No such file or directory\n   36 | #include \"gcc-public-types.h\"\n      |          ^~~~~~~~~~~~~~~~~~~~\ncompilation terminated.\n\nIn file included from /gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-declaration.c:20:\n/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-common.h:36:10: fatal error: gcc-public-types.h: No such file or directory\n   36 | #include \"gcc-public-types.h\"\n      |          ^~~~~~~~~~~~~~~~~~~~\ncompilation terminated.\n\n/gcc_python_plugin/gcc-python-plugin-master/gcc-c-api/gcc-diagnostics.c:20:10: fatal error: gcc"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

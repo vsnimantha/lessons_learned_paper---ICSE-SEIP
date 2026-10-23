@@ -1,0 +1,1319 @@
+{
+  "plugin": "dfed_plugin",
+  "source_dir": "/dfed_plugin",
+  "source_files": [
+    "/dfed_plugin/Asm/AsmGen.cpp",
+    "/dfed_plugin/Asm/InstrType.cpp",
+    "/dfed_plugin/Asm/UpdatePoint.cpp",
+    "/dfed_plugin/DFED_Plugin.cpp",
+    "/dfed_plugin/DFED_Plugin_Main.cpp",
+    "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+    "/dfed_plugin/DFED_Techniques/DFEDcreator.cpp",
+    "/dfed_plugin/DFED_Techniques/FDEC.cpp",
+    "/dfed_plugin/DFED_Techniques/FDEC_S.cpp",
+    "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+    "/dfed_plugin/DFED_Techniques/FDFC.cpp",
+    "/dfed_plugin/DFED_Techniques/FDSC.cpp",
+    "/dfed_plugin/DFED_Techniques/GeneralDFED.cpp",
+    "/dfed_plugin/DFED_Techniques/P_DETECTOR.cpp",
+    "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+    "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+    "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+    "/dfed_plugin/Printer/Printer.cpp",
+    "/dfed_plugin/SupportClasses/VsDETECTOR.cpp",
+    "/dfed_plugin/SupportClasses/VsP_DETECTOR.cpp",
+    "/dfed_plugin/SupportClasses/VulnerableSection.cpp",
+    "/dfed_plugin/Targets/ARMv6M_Functions.cpp",
+    "/dfed_plugin/Targets/ARMv7M_Functions.cpp",
+    "/dfed_plugin/Targets/ARMv8M_Functions.cpp",
+    "/dfed_plugin/Targets/ArmISA_Functions.cpp"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Asm/AsmGen.cpp",
+        "line": 204,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'next' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Asm/AsmGen.cpp",
+        "line": 204,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'next' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Asm/InstrType.cpp",
+        "line": 362,
+        "severity": "error",
+        "id": "missingReturn",
+        "message": "Found an exit path from function with non-void return type that has missing return statement",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Asm/InstrType.cpp",
+        "line": 83,
+        "severity": "style",
+        "id": "knownConditionTrueFalse",
+        "message": "Condition 'nrOfSuccs==1' is always true",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Asm/InstrType.cpp",
+        "line": 330,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'arguments' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Asm/InstrType.cpp",
+        "line": 656,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'arguments' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Asm/InstrType.cpp",
+        "line": 662,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 148,
+        "severity": "error",
+        "id": "returnDanglingLifetime",
+        "message": "Returning pointer to local variable 'msg' that will be invalid when returning.",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 74,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 98,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 99,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 100,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 101,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 107,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 74,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'funName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin.cpp",
+        "line": 176,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'fCopyParts' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Plugin_Main.cpp",
+        "line": 53,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'ver' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 137,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 138,
+        "severity": "warning",
+        "id": "wrongPrintfScanfArgNum",
+        "message": "printf format string requires 0 parameters but 1 is given.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 230,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 253,
+        "severity": "warning",
+        "id": "wrongPrintfScanfArgNum",
+        "message": "printf format string requires 0 parameters but 1 is given.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 279,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 286,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 458,
+        "severity": "style",
+        "id": "shadowArgument",
+        "message": "Local variable 'bb' shadows outer argument",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 3,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regmap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 3,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'protectedRegs' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 394,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'startInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 433,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'instruction' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 93,
+        "severity": "style",
+        "id": "useStlAlgorithm",
+        "message": "Consider using std::find_if algorithm instead of a raw loop.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/DETECTOR.cpp",
+        "line": 362,
+        "severity": "style",
+        "id": "useStlAlgorithm",
+        "message": "Consider using std::all_of or std::none_of algorithm instead of a raw loop.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Targets/ARMv6M_Functions.h",
+        "line": 21,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'ARMv6M_Functions' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Targets/ARMv7M_Functions.h",
+        "line": 21,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'ARMv7M_Functions' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Targets/ARMv8M_Functions.h",
+        "line": 21,
+        "severity": "style",
+        "id": "noExplicitConstructor",
+        "message": "Class 'ARMv8M_Functions' has a constructor with 1 argument that is not explicit.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDFC.h",
+        "line": 28,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'implementDuplicationComparison' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC.h",
+        "line": 29,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'implementDuplicationComparison' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S.h",
+        "line": 29,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'implementDuplicationComparison' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDSC.h",
+        "line": 28,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'implementDuplicationComparison' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.h",
+        "line": 30,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'implementDuplicationComparison' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.h",
+        "line": 27,
+        "severity": "style",
+        "id": "missingOverride",
+        "message": "The function 'implementDuplicationComparison' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC.cpp",
+        "line": 15,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC.cpp",
+        "line": 65,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC.cpp",
+        "line": 80,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC.cpp",
+        "line": 95,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S.cpp",
+        "line": 16,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S.cpp",
+        "line": 70,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S.cpp",
+        "line": 84,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S.cpp",
+        "line": 101,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S.cpp",
+        "line": 118,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 126,
+        "severity": "warning",
+        "id": "uselessAssignmentPtrArg",
+        "message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 16,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 199,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'lastRealSafeInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 199,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'lastRealInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 137,
+        "severity": "style",
+        "id": "useStlAlgorithm",
+        "message": "Consider using std::any_of, std::all_of, std::none_of algorithm instead of a raw loop.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 72,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 114,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 135,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 152,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDEC_S_SP.cpp",
+        "line": 161,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDFC.cpp",
+        "line": 18,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDFC.cpp",
+        "line": 70,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'lastRealSafeInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDFC.cpp",
+        "line": 70,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'lastRealInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDFC.cpp",
+        "line": 101,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDFC.cpp",
+        "line": 114,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDFC.cpp",
+        "line": 129,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDSC.cpp",
+        "line": 17,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDSC.cpp",
+        "line": 77,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'lastRealSafeInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDSC.cpp",
+        "line": 77,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'lastRealInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDSC.cpp",
+        "line": 108,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDSC.cpp",
+        "line": 121,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/FDSC.cpp",
+        "line": 136,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/GeneralDFED.cpp",
+        "line": 125,
+        "severity": "error",
+        "id": "missingReturn",
+        "message": "Found an exit path from function with non-void return type that has missing return statement",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/GeneralDFED.cpp",
+        "line": 21,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/GeneralDFED.cpp",
+        "line": 26,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/GeneralDFED.cpp",
+        "line": 68,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/P_DETECTOR.cpp",
+        "line": 3,
+        "severity": "warning",
+        "id": "funcArgOrderDifferent",
+        "message": "Function 'P_DETECTOR' argument order different: declaration 'isa, regmap, signatureReg, parityReg, ssPtr, protectSp' definition 'isa, regmap, signatureReg, ssPtr1, parityReg, protectSp'",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/P_DETECTOR.cpp",
+        "line": 3,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regmap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 292,
+        "severity": "warning",
+        "id": "uselessAssignmentPtrArg",
+        "message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 4,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 204,
+        "severity": "style",
+        "id": "constVariableReference",
+        "message": "Variable 'reg' can be declared as reference to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 192,
+        "severity": "style",
+        "id": "useStlAlgorithm",
+        "message": "Consider using std::find_if algorithm instead of a raw loop.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 206,
+        "severity": "style",
+        "id": "useStlAlgorithm",
+        "message": "Consider using std::accumulate algorithm instead of a raw loop.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 292,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'beforeInsn' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 131,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT.cpp",
+        "line": 318,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 161,
+        "severity": "style",
+        "id": "variableScope",
+        "message": "The scope of the variable 'spIsUsed' can be reduced.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 3,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 131,
+        "severity": "style",
+        "id": "constVariableReference",
+        "message": "Variable 'reg' can be declared as reference to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 184,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'cmpInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 161,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'spIsUsed' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 169,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'spIsUsed' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 184,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'cmpInsn' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 118,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/SWIFT_R.cpp",
+        "line": 147,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 244,
+        "severity": "error",
+        "id": "missingReturn",
+        "message": "Found an exit path from function with non-void return type that has missing return statement",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 267,
+        "severity": "error",
+        "id": "missingReturn",
+        "message": "Found an exit path from function with non-void return type that has missing return statement",
+        "signal": "HIGH_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.h",
+        "line": 34,
+        "severity": "style",
+        "id": "unusedPrivateFunction",
+        "message": "Unused private function: 'S_SWIFT_R::selected_register2'",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.h",
+        "line": 36,
+        "severity": "style",
+        "id": "unusedPrivateFunction",
+        "message": "Unused private function: 'S_SWIFT_R::selected_register4'",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 257,
+        "severity": "warning",
+        "id": "wrongPrintfScanfArgNum",
+        "message": "printf format string requires 0 parameters but 1 is given.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 362,
+        "severity": "warning",
+        "id": "wrongPrintfScanfArgNum",
+        "message": "printf format string requires 0 parameters but 1 is given.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 520,
+        "severity": "style",
+        "id": "variableScope",
+        "message": "The scope of the variable 'spIsUsed' can be reduced.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 20,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'regMap' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 435,
+        "severity": "style",
+        "id": "constVariableReference",
+        "message": "Variable 'reg' can be declared as reference to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 543,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'cmpInsn' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 423,
+        "severity": "style",
+        "id": "useStlAlgorithm",
+        "message": "Consider using std::find_if algorithm instead of a raw loop.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 520,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'spIsUsed' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 528,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'spIsUsed' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 543,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'cmpInsn' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 180,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 402,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 581,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+        "line": 594,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 56,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 78,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 78,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 175,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 176,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 177,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 193,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 205,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 205,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%i in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 142,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 142,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'dirName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 141,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'fileName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 152,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'fileName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 187,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'fileName' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/SupportClasses/VsDETECTOR.cpp",
+        "line": 3,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'vulnerableInsns' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/SupportClasses/VsP_DETECTOR.cpp",
+        "line": 4,
+        "severity": "style",
+        "id": "cstyleCast",
+        "message": "C-style pointer casting",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/SupportClasses/VsP_DETECTOR.cpp",
+        "line": 3,
+        "severity": "performance",
+        "id": "passedByValue",
+        "message": "Function parameter 'vulnerableInsns' should be passed by const reference.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/SupportClasses/VulnerableSection.cpp",
+        "line": 176,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/SupportClasses/VulnerableSection.cpp",
+        "line": 228,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/SupportClasses/VulnerableSection.cpp",
+        "line": 347,
+        "severity": "warning",
+        "id": "invalidPrintfArgType_sint",
+        "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Targets/ARMv6M_Functions.cpp",
+        "line": 30,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/dfed_plugin/Targets/ARMv6M_Functions.cpp",
+        "line": 48,
+        "severity": "performance",
+        "id": "postfixOperator",
+        "message": "Prefer prefix ++/-- operators for non-primitive types.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/dfed_plugin/Asm/AsmGen.cpp:204:style:constVariablePointer:Variable 'next' can be declared as pointer to const\n/dfed_plugin/Asm/AsmGen.cpp:204:style:unreadVariable:Variable 'next' is assigned a value that is never used.\n/dfed_plugin/Asm/InstrType.cpp:362:error:missingReturn:Found an exit path from function with non-void return type that has missing return statement\n/dfed_plugin/Asm/InstrType.cpp:83:style:knownConditionTrueFalse:Condition 'nrOfSuccs==1' is always true\n/dfed_plugin/Asm/InstrType.cpp:330:performance:passedByValue:Function parameter 'arguments' should be passed by const reference.\n/dfed_plugin/Asm/InstrType.cpp:656:performance:passedByValue:Function parameter 'arguments' should be passed by const reference.\n/dfed_plugin/Asm/InstrType.cpp:662:performance:postfixOperator:Prefer prefix ++/-- operators for non-primitive types.\n/dfed_plugin/DFED_Plugin.cpp:148:error:returnDanglingLifetime:Returning pointer to local variable 'msg' that will be invalid when returning.\n/dfed_plugin/DFED_Plugin.cpp:74:style:cstyleCast:C-style pointer casting\n/dfed_plugin/DFED_Plugin.cpp:98:style:cstyleCast:C-style pointer casting\n/dfed_plugin/DFED_Plugin.cpp:99:style:cstyleCast:C-style pointer casting\n/dfed_plugin/DFED_Plugin.cpp:100:style:cstyleCast:C-style pointer casting\n/dfed_plugin/DFED_Plugin.cpp:101:style:cstyleCast:C-style pointer casting\n/dfed_plugin/DFED_Plugin.cpp:107:style:cstyleCast:C-style pointer casting\n/dfed_plugin/DFED_Plugin.cpp:74:style:constVariablePointer:Variable 'funName' can be declared as pointer to const\n/dfed_plugin/DFED_Plugin.cpp:176:style:constVariablePointer:Variable 'fCopyParts' can be declared as pointer to const\n/FIR"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS_PARTIAL",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/dfed_plugin/Asm/UpdatePoint.cpp",
+        "line": 118,
+        "severity": "warning",
+        "id": "-Wsign-compare",
+        "message": "comparison of integer expressions of different signedness: \u2018int\u2019 and \u2018unsigned int\u2019 [-Wsign-compare]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 67,
+        "severity": "warning",
+        "id": "-Wchar-subscripts",
+        "message": "array subscript has type \u2018char\u2019 [-Wchar-subscripts]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/dfed_plugin/Printer/Printer.cpp",
+        "line": 78,
+        "severity": "warning",
+        "id": "-Wchar-subscripts",
+        "message": "array subscript has type \u2018char\u2019 [-Wchar-subscripts]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "AsmGen.cpp: /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/emit-rtl.h:399:41: error: use of enum \u2018memmodel\u2019 without previous declaration; InstrType.cpp: /dfed_plugin/Asm/InstrType.cpp:156:62: error: \u2018SP_REGNUM\u2019 was not declared in this scope; did you mean \u2018SP_REG\u2019?; DFED_Plugin.cpp: /dfed_plugin/DFED_Plugin.cpp:10:10: fatal error: DFEDcreator.h: No such file or directory",
+    "raw": "/dfed_plugin/Asm/AsmGen.cpp:337:1: warning: multi-line comment [-Wcomment]\n  337 | //------------------------------ Private Section --------------------- \\\\\n      | ^\nIn file included from /dfed_plugin/Asm/AsmGen.cpp:10:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/emit-rtl.h:399:41: error: use of enum \u2018memmodel\u2019 without previous declaration\n  399 | extern bool need_atomic_barrier_p (enum memmodel, bool);\n      |                                         ^~~~~~~~\n/dfed_plugin/Asm/AsmGen.cpp: In static member function \u2018static rtx_insn* AsmGen::emitCmpRegInt(unsigned int, int, rtx_insn*, basic_block, bool)\u2019:\n/dfed_plugin/Asm/AsmGen.cpp:21:41: error: \u2018CC_REGNUM\u2019 was not declared in this scope; did you mean \u2018CC_REGNO_P\u2019?\n   21 |         rtx regCC = gen_rtx_REG(CCmode, CC_REGNUM);\n      |                                         ^~~~~~~~~\n      |                                         CC_REGNO_P\n/dfed_plugin/Asm/AsmGen.cpp: In static member function \u2018static rtx_insn* AsmGen::emitCmpRegReg(unsigned int, unsigned int, rtx_insn*, basic_block, bool)\u2019:\n/dfed_plugin/Asm/AsmGen.cpp:34:41: error: \u2018CC_REGNUM\u2019 was not declared in this scope; did you mean \u2018CC_REGNO_P\u2019?\n   34 |         rtx regCC = gen_rtx_REG(CCmode, CC_REGNUM);\n      |                                         ^~~~~~~~~\n      |                                         CC_REGNO_P\n/dfed_plug\n/dfed_plugin/Asm/InstrType.cpp:461:1: warning: multi-line comment [-Wcomment]\n  461 | // ----------------------- Private Section -------------------------- \\\\\n      | ^\n/dfed_plugin/Asm/InstrType.cpp: In static member function \u2018static bool InstrType::isPush(rtx_insn*)\u2019:\n/dfed_plugin/Asm/InstrType.cpp:156:62: error: \u2018SP_REGNUM\u2019 was not declared in this scope; did you mean \u2018SP_REG\u2019?\n  156 |                 bool hasSPReg = findRegWithNumb"
+  },
+  "high_signal_findings": [
+    {
+      "tool": "cppcheck",
+      "file": "/dfed_plugin/Asm/InstrType.cpp",
+      "line": 362,
+      "severity": "error",
+      "id": "missingReturn",
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/dfed_plugin/DFED_Plugin.cpp",
+      "line": 148,
+      "severity": "error",
+      "id": "returnDanglingLifetime",
+      "message": "Returning pointer to local variable 'msg' that will be invalid when returning.",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/dfed_plugin/DFED_Techniques/GeneralDFED.cpp",
+      "line": 125,
+      "severity": "error",
+      "id": "missingReturn",
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+      "line": 244,
+      "severity": "error",
+      "id": "missingReturn",
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "signal": "HIGH_SIGNAL"
+    },
+    {
+      "tool": "cppcheck",
+      "file": "/dfed_plugin/DFED_Techniques/S_SWIFT_R.cpp",
+      "line": 267,
+      "severity": "error",
+      "id": "missingReturn",
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "signal": "HIGH_SIGNAL"
+    }
+  ],
+  "high_signal_count": 5,
+  "overall": "HIGH_SIGNAL_CANDIDATES"
+}

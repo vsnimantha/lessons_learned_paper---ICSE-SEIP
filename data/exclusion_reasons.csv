@@ -1,0 +1,13 @@
+code,applies_to,description
+NO_MEANINGFUL_SEARCH_OBJECTIVE,s2,"Plugin has no input-dependent activation problem (e.g. tutorial that only prints a banner)"
+BUILD_FAILURE,s2;s3,"Plugin or instrumented plugin does not build with the pinned toolchain"
+LOAD_FAILURE,s2;s3,"Plugin builds but cannot be loaded or executed reproducibly by the host compiler"
+GCC_API_OR_VERSION_MISMATCH,s2;s3,"Plugin needs a GCC API or version outside the pinned range"
+TARGET_ARCHITECTURE_CONSTRAINT,s2;s3,"Plugin only meaningful on a non-host target (cross compiler needed)"
+MISSING_DEPENDENCY,s2;s3,"External library or tool needed by the plugin is unavailable"
+MISSING_PLUGIN_CONFIGURATION,s2;s3,"Plugin needs arguments or external configuration that cannot be reconstructed"
+NO_RELIABLE_ACTIVATING_INPUT,s2;s3,"No program is known that makes the plugin act"
+COVERAGE_UNAVAILABLE,s2,"Plugin-scoped coverage cannot be collected"
+INSTRUMENTATION_UNSAFE_OR_UNAVAILABLE,s3,"Instrumentation fails the safety gate or cannot be applied"
+NO_BEHAVIOURAL_OBLIGATION,s3,"No observable obligation to check (no behaviour that instrumentation can log)"
+REFERENCE_VARIANT_COMPARISON_UNAVAILABLE,s3,"BASE or variant builds do not run, so no comparison exists"

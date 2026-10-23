@@ -1,0 +1,88 @@
+{
+  "plugin": "latent_entropy-master",
+  "source_dir": "/latent_entropy-master",
+  "source_files": [
+    "/latent_entropy-master/latent_entropy_plugin.c",
+    "/latent_entropy-master/test.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "/latent_entropy-master/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.; /latent_entropy-master/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.",
+    "raw": "/latent_entropy-master/test.c:11:warning:invalidPrintfArgType_uint:%u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'.\n/latent_entropy-master/test.c:20:warning:invalidPrintfArgType_uint:%u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'.\n/latent_entropy-master/test.c:24:warning:invalidPrintfArgType_uint:%u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'.\n/latent_entropy-master/test.c:9:style:constParameter:Parameter 'argv' can be declared as const array\n/latent_entropy-master/test.c:14:style:constParameter:Parameter 'argv' can be declared as const array\n/latent_entropy-master/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/latent_entropy-master/latent_entropy_plugin.c",
+        "line": 255,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018attribute_spec::exclude\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/latent_entropy-master/latent_entropy_plugin.c",
+        "line": 595,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/latent_entropy-master/latent_entropy_plugin.c",
+        "line": 595,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/latent_entropy-master/latent_entropy_plugin.c",
+        "line": 595,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/latent_entropy-master/test.c",
+        "line": 5,
+        "severity": "warning",
+        "id": "-Wattributes",
+        "message": "\u2018latent_entropy\u2019 attribute directive ignored [-Wattributes]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/latent_entropy-master/test.c",
+        "line": 9,
+        "severity": "warning",
+        "id": "-Wattributes",
+        "message": "\u2018latent_entropy\u2019 attribute directive ignored [-Wattributes]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/latent_entropy-master/test.c",
+        "line": 14,
+        "severity": "warning",
+        "id": "-Wattributes",
+        "message": "\u2018latent_entropy\u2019 attribute directive ignored [-Wattributes]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/latent_entropy-master/latent_entropy_plugin.c:255:1: warning: missing initializer for member \u2018attribute_spec::exclude\u2019 [-Wmissing-field-initializers]\n  255 | };\n      | ^\nIn file included from /latent_entropy-master/gcc-common.h:32,\n                 from /latent_entropy-master/latent_entropy_plugin.c:77:\n/latent_entropy-master/latent_entropy_plugin.c: In function \u2018int plugin_init(plugin_name_args*, plugin_gcc_version*)\u2019:\n/latent_entropy-master/latent_entropy_plugin.c:595:26: warning: unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]\n  595 |                 error(G_(\"unkown option '-fplugin-arg-%s-%s'\"), plugin_name, argv[i].key);\n      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/intl.h:63:21: note: in definition of macro \u2018G_\u2019\n   63 | # define G_(gmsgid) gmsgid\n      |                     ^~~~~~\n/latent_entropy-master/latent_entropy_plugin.c:595:41: note: format string is defined here\n  595 |                 err\n/latent_entropy-master/test.c:5:56: warning: \u2018latent_entropy\u2019 attribute directive ignored [-Wattributes]\n    5 | #define __latent_entropy __attribute__((latent_entropy))\n      |                                                        ^\n/latent_entropy-master/test.c:7:39: note: in expansion of macro \u2018__latent_entropy\u2019\n    7 | volatile unsigned"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

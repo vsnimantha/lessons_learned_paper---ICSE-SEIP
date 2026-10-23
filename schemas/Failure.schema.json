@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Failure",
+  "description": "Stage s2",
+  "type": "object",
+  "required": [
+    "plugin",
+    "kind",
+    "program",
+    "dedup_key"
+  ],
+  "properties": {
+    "plugin": {
+      "description": "string"
+    },
+    "kind": {
+      "description": "crash|assertion|diagnostic|hang"
+    },
+    "program": {
+      "description": "path (minimised)"
+    },
+    "dedup_key": {
+      "description": "string"
+    },
+    "count": {
+      "description": "integer"
+    }
+  }
+}

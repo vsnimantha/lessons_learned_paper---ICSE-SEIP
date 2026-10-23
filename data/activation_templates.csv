@@ -1,0 +1,17 @@
+plugin,dominant_pattern,compiler_level,language,authoring_minutes
+arm_ssp,Stack-protector attrs,Backend,C,10
+funcp_encrypt,Func. pointer calls,GIMPLE/IPA,C++,10
+gcc_assert_introspect,Assertion macros,Frontend/AST,C,10
+latent_entropy,Global/local var inits,GIMPLE pass,C,15
+randomize_layout,Struct/union decls,Frontend/layout,C,15
+sancov,Dense control-flow,GIMPLE/CFG,C,10
+Stackleak,Uninit. stack vars,GIMPLE pass,C,15
+Structleak,Padded struct defs,Frontend/layout,C,15
+cprintf,Format-string call sites,Frontend/calls,C++,10
+CFED,CFG + error-handler entry,GIMPLE/CFG,C++,15
+DFED,Data-flow + mem. accesses,GIMPLE/dataflow,C++,15
+SecRetAddress,Return-addr. instr.,Backend,C++,10
+static_analyser,Multi-path ptr. analysis,GIMPLE/CFG,C,15
+reftrack,Ref-counting patterns,GIMPLE/IPA,C++,15
+instrument_attribute,Custom attr. annotations,Frontend/attrs,C,10
+oi,Operator instrumentation,Frontend/C++AST,C++,10

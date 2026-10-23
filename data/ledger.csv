@@ -1,0 +1,28 @@
+ledger_id,plugin,mechanism,s1_reported,s2_reproduced,s4_confirmed,finding_id,grade,feedback_or_note,provenance
+L01,static_analyser,fprintf2 missing return,1,1,n/a,,,reproduced failure,transcribed from paper tables; verify against stage repositories
+L02,DFED,missing return in findArgumentValue (1-arg); caller passes garbage pointer to strlen,0,1,n/a,,,developer-confirmed,transcribed from paper tables; verify against stage repositories
+L03,cprintf,gimple_call_arg read past last argument,0,1,1,D7,A,,transcribed from paper tables; verify against stage repositories
+L04,cprintf,option parser steps past terminating NUL,0,0,1,D6,A,,transcribed from paper tables; verify against stage repositories
+L05,cprintf,return value of rewritten call dropped,0,0,1,D8,A,,transcribed from paper tables; verify against stage repositories
+L06,cprintf,statement after rewritten call skipped,0,0,1,D9,B,,transcribed from paper tables; verify against stage repositories
+L07,cprintf,equal_range(spec).first dereferenced without end() check,0,0,1,D10,B,,transcribed from paper tables; verify against stage repositories
+L08,Stackleak,reachable assertion without architecture argument,0,1,0,,,reproduced,transcribed from paper tables; verify against stage repositories
+L09,funcp_encrypt,assumes all fields are data members,0,1,0,,,reproduced,transcribed from paper tables; verify against stage repositories
+L10,gcc_assert_introspect,type dispatch falls to gcc_unreachable,0,1,1,D11,A,,transcribed from paper tables; verify against stage repositories
+L11,gcc_assert_introspect,format specifiers returned without leading %,0,0,1,D12,A,,transcribed from paper tables; verify against stage repositories
+L12,gcc_assert_introspect,real_value passed to %f,0,0,1,D13,A,,transcribed from paper tables; verify against stage repositories
+L13,gcc_assert_introspect,unclamped snprintf into 1024-byte stack buffer,0,0,1,D14,A,,transcribed from paper tables; verify against stage repositories
+L14,gcc_assert_introspect,file name embedded in printf format,0,0,1,D15,A,,transcribed from paper tables; verify against stage repositories
+L15,SecRetAddress,single_pred on exit block of function that never returns,0,1,1,D1,A,,transcribed from paper tables; verify against stage repositories
+L16,CFED,uninitialised upD read,1,0,1,D2,A,acknowledged,transcribed from paper tables; verify against stage repositories
+L17,CFED,pointer to expired stack array thrown,1,0,1,D3,B,acknowledged,transcribed from paper tables; verify against stage repositories
+L18,Instrument Attribute,uninitialised slots freed; null option value to strlen,0,0,1,D4,A,,transcribed from paper tables; verify against stage repositories
+L19,Latent Entropy,gate ignores inlining of marked functions,0,0,1,D5,B,,transcribed from paper tables; verify against stage repositories
+L20,DFED,local msg dangling pointer,1,0,n/a,,,developer-confirmed,transcribed from paper tables; verify against stage repositories
+L21,DFED,isLoad missing return (currently uncalled),1,0,n/a,,,currently uncalled,transcribed from paper tables; verify against stage repositories
+L22,DFED,selected_register missing return (currently uncalled),1,0,n/a,,,currently uncalled,transcribed from paper tables; verify against stage repositories
+L23,DFED,selected_register2 missing return (currently uncalled),1,0,n/a,,,currently uncalled,transcribed from paper tables; verify against stage repositories
+L24,DFED,getUsedRegisters missing return (currently uncalled),1,0,n/a,,,currently uncalled,transcribed from paper tables; verify against stage repositories
+L25,CTraps,thread wrapper missing return (latent under C build),1,n/a,n/a,,,source only,transcribed from paper tables; verify against stage repositories
+L26,CTraps,null passed to %s (first),1,n/a,n/a,,,source only,transcribed from paper tables; verify against stage repositories
+L27,CTraps,null passed to %s (second),1,n/a,n/a,,,source only,transcribed from paper tables; verify against stage repositories

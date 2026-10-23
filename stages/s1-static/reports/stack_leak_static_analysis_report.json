@@ -1,0 +1,150 @@
+{
+  "plugin": "stack_leak",
+  "source_dir": "/stack_leak",
+  "source_files": [
+    "/stack_leak/stackleak_plugin.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "/stack_leak/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.; /stack_leak/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.",
+    "raw": "/stack_leak/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 186,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018gimple_stmt_iterator::seq\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 186,
+        "severity": "warning",
+        "id": "-Wmissing-field-initializers",
+        "message": "missing initializer for member \u2018gimple_stmt_iterator::bb\u2019 [-Wmissing-field-initializers]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 583,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 583,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 583,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 590,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 590,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 590,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 596,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 596,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 596,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 608,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 608,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/stack_leak/stackleak_plugin.c",
+        "line": 608,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/stack_leak/stackleak_plugin.c: In function \u2018unsigned int stackleak_instrument_execute()\u2019:\n/stack_leak/stackleak_plugin.c:186:40: warning: missing initializer for member \u2018gimple_stmt_iterator::seq\u2019 [-Wmissing-field-initializers]\n  186 |         gimple_stmt_iterator gsi = { 0 };\n      |                                        ^\n/stack_leak/stackleak_plugin.c:186:40: warning: missing initializer for member \u2018gimple_stmt_iterator::bb\u2019 [-Wmissing-field-initializers]\nIn file included from /stack_leak/gcc-common.h:32,\n                 from /stack_leak/stackleak_plugin.c:30:\n/stack_leak/stackleak_plugin.c: In function \u2018int plugin_init(plugin_name_args*, plugin_gcc_version*)\u2019:\n/stack_leak/stackleak_plugin.c:583:42: warning: unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]\n  583 |                                 error(G_(\"no value supplied for option '-fplugin-arg-%s-%s'\"),\n      |          \n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

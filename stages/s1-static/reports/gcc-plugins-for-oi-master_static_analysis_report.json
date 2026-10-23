@@ -1,0 +1,23 @@
+{
+  "plugin": "gcc-plugins-for-oi-master",
+  "source_dir": "/oi-plugin/gcc-plugins-for-oi-master",
+  "source_files": [
+    "/oi-plugin/gcc-plugins-for-oi-master/no_opt_attr_plugin.cc"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_CLEAN",
+    "findings": [],
+    "reason": "",
+    "raw": ""
+  },
+  "gxx": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "no_opt_attr_plugin.cc: /usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-fold.h:72:32: error: use of enum \u2018gsi_iterator_update\u2019 without previous declaration",
+    "raw": "In file included from /oi-plugin/gcc-plugins-for-oi-master/gcc-common.h:81,\n                 from /oi-plugin/gcc-plugins-for-oi-master/no_opt_attr_plugin.cc:8:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-fold.h:72:32: error: use of enum \u2018gsi_iterator_update\u2019 without previous declaration\n   72 |                           enum gsi_iterator_update,\n      |                                ^~~~~~~~~~~~~~~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-fold.h:75:32: error: use of enum \u2018gsi_iterator_update\u2019 without previous declaration\n   75 |                           enum gsi_iterator_update,\n      |                                ^~~~~~~~~~~~~~~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-fold.h:78:32: error: use of enum \u2018gsi_iterator_update\u2019 without previous declaration\n   78 |                           enum gsi_iterator_update,\n      |                                ^~~~~~~~~~~~~~~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-fold.h: In function \u2018tree_node* gimple_build(gimple**, location_t, tree_code, tree, Args ...)\u2019:\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/gimple-fold.h:87:30: error: there are no arguments to \u2018gsi_last\u2019 that depend on a template parameter, so a declaration of \u2018gsi_last\u2019 must be available [-fpermissive]\n   87 |   gimple_stmt_iterator gsi = gsi_last\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

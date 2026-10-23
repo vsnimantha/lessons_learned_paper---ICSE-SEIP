@@ -1,0 +1,79 @@
+{
+  "plugin": "sancov-master",
+  "source_dir": "/sancov-master",
+  "source_files": [
+    "/sancov-master/sancov_plugin.c",
+    "/sancov-master/test.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "/sancov-master/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.; /sancov-master/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.",
+    "raw": "/sancov-master/gcc-common.h:218:error:syntaxError:Code 'varpool_node::finalize_decl' is invalid C code. Use --std or --language to configure the language.\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/sancov-master/sancov_plugin.c",
+        "line": 126,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/sancov-master/sancov_plugin.c",
+        "line": 126,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/sancov-master/sancov_plugin.c",
+        "line": 126,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/sancov-master/sancov_plugin.c",
+        "line": 98,
+        "severity": "warning",
+        "id": "-Wunused-variable",
+        "message": "unused variable \u2018gt_ggc_r_gt_sancov\u2019 [-Wunused-variable]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/sancov-master/sancov_plugin.c",
+        "line": 111,
+        "severity": "warning",
+        "id": "-Wunused-variable",
+        "message": "unused variable \u2018sancov_pass_info\u2019 [-Wunused-variable]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/sancov-master/test.c",
+        "line": 8,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018argv\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "In file included from /sancov-master/gcc-common.h:32,\n                 from /sancov-master/sancov_plugin.c:22:\n/sancov-master/sancov_plugin.c: In function \u2018int plugin_init(plugin_name_args*, plugin_gcc_version*)\u2019:\n/sancov-master/sancov_plugin.c:126:26: warning: unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]\n  126 |                 error(G_(\"unkown option '-fplugin-arg-%s-%s'\"), plugin_name, argv[i].key);\n      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include/intl.h:63:21: note: in definition of macro \u2018G_\u2019\n   63 | # define G_(gmsgid) gmsgid\n      |                     ^~~~~~\n/sancov-master/sancov_plugin.c:126:41: note: format string is defined here\n  126 |                 error(G_(\"unkown option '-fplugin-arg-%s-%s'\"), plugin_name, argv[i].key);\n      |                                         ^~\n/sancov-master/sancov_plugin.c:126:26: warning: misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]\n \n/sancov-master/test.c: In function \u2018int main(int, char**)\u2019:\n/sancov-master/test.c:8:26: warning: unused parameter \u2018argv\u2019 [-Wunused-parameter]\n    8 | int main(int argc, char *argv[])\n      |                    ~~~~~~^~~~~~\n\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

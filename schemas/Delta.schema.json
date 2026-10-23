@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Delta",
+  "description": "Stage s3",
+  "type": "object",
+  "required": [
+    "plugin",
+    "test",
+    "variant",
+    "label"
+  ],
+  "properties": {
+    "plugin": {
+      "description": "string"
+    },
+    "test": {
+      "description": "string"
+    },
+    "variant": {
+      "description": "BASE-relative variant id from configurations.csv"
+    },
+    "tester": {
+      "description": "string"
+    },
+    "label": {
+      "description": "UNLABELLED|OPTIMISED_AWAY|CONFIRMED_BENIGN|LIKELY_BUG"
+    },
+    "frames": {
+      "description": "equal|differ"
+    },
+    "cov_line": {
+      "description": "number"
+    }
+  }
+}

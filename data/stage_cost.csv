@@ -1,0 +1,6 @@
+stage,unit,low,high,note
+S1,minutes per plugin,,15,author-reported maximum
+S2,minutes template authoring per plugin,10,15,200 minutes in total (activation_templates.csv)
+S2,CPU hours per run,24,36,five runs per plugin
+S3,minutes per plugin,20,30,author-reported
+S4,minutes per plugin,15,120,most plugins near 15 min; depends on manual inspection needed

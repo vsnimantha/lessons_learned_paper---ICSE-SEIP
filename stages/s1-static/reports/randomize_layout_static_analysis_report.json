@@ -1,0 +1,240 @@
+{
+  "plugin": "randomize_layout",
+  "source_dir": "/randomize_layout",
+  "source_files": [
+    "/randomize_layout/randomize_layout_plugin.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "/randomize_layout/randomize_layout_plugin.c:23:error:preprocessorErrorDirective:#error \"The RANDSTRUCT plugin requires GCC 4.7 or newer.\"",
+    "raw": "/randomize_layout/randomize_layout_plugin.c:23:error:preprocessorErrorDirective:#error \"The RANDSTRUCT plugin requires GCC 4.7 or newer.\"\n"
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 71,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018args\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 71,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018flags\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 114,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018node\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 114,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018name\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 114,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018args\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 114,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018flags\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 124,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018node\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 124,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018name\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 124,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018args\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 124,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018flags\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 517,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 545,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 577,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018event_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 577,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 42,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted whitespace character \u2018\\x0a\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 42,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted whitespace character \u2018\\x0a\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 645,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018event_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 645,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 42,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted whitespace character \u2018\\x0a\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 42,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted whitespace character \u2018\\x0a\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 42,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted whitespace character \u2018\\x0a\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 890,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unquoted sequence of 2 consecutive punctuation characters \u2018'-\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 890,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "misspelled term \u2018arg\u2019 in format; use \u2018argument\u2019 instead [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/randomize_layout/randomize_layout_plugin.c",
+        "line": 890,
+        "severity": "warning",
+        "id": "-Wformat-diag",
+        "message": "unterminated quote character \u2018'\u2019 in format [-Wformat-diag]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/randomize_layout/randomize_layout_plugin.c: In function \u2018tree_node* handle_randomize_layout_attr(tree_node**, tree, tree, int, bool*)\u2019:\n/randomize_layout/randomize_layout_plugin.c:71:70: warning: unused parameter \u2018args\u2019 [-Wunused-parameter]\n   71 | static tree handle_randomize_layout_attr(tree *node, tree name, tree args, int flags, bool *no_add_attrs)\n      |                                                                 ~~~~~^~~~\n/randomize_layout/randomize_layout_plugin.c:71:80: warning: unused parameter \u2018flags\u2019 [-Wunused-parameter]\n   71 | static tree handle_randomize_layout_attr(tree *node, tree name, tree args, int flags, bool *no_add_attrs)\n      |                                                                            ~~~~^~~~~\n/randomize_layout/randomize_layout_plugin.c: In function \u2018tree_node* handle_randomize_considered_attr(tree_node**, tree, tree, int, bool*)\u2019:\n/randomize_layout/randomize_layout_plugin.c:114:52: warning: unused parameter \u2018node\u2019 [-Wunused-parameter]\n  114 | static tree handle_randomize_considered_attr(tree *node, tree name, tree args, int flags,\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

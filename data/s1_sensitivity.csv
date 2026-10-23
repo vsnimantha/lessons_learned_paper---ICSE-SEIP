@@ -1,0 +1,5 @@
+config,description,complete,partial,failed,cppcheck_files_parsed_of_124,gxx_files_parsed_of_124,source
+B0,original batch baseline,8,16,1,,,static paper and Stage 1 report
+B1,per-file baseline,8,16,1,98,33,static paper and Stage 1 report
+S1,B1 plus forced C++ parsing for Cppcheck,12,13,0,103,33,static paper and Stage 1 report
+S2,S1 plus GCC plugin headers for Cppcheck,8,15,2,92,33,static paper and Stage 1 report

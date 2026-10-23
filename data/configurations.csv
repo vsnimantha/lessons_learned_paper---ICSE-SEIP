@@ -1,0 +1,19 @@
+variant,plugin_build_flags,role,likely_bug_records_in_report
+BASE,,baseline plugin build (compiled with -g only),
+DEBUG,-O0 -g,"noise variant, never labelled",
+O0,-O0,"noise variant, never labelled",
+O1,-O1,variant compared with BASE,33
+O2,-O2,variant compared with BASE,38
+O3,-O3,variant compared with BASE,48
+OS,-Os,variant compared with BASE,33
+NO_INLINE,-O2 -fno-inline -fno-inline-functions,variant compared with BASE,38
+INLINE_ALL,-O3 -finline-functions -finline-small-functions,variant compared with BASE,48
+NO_VECT,-O3 -fno-tree-vectorize,variant compared with BASE,48
+VECT,-O3 -ftree-vectorize,variant compared with BASE,48
+NO_TREE_OPTS,-O2 -fno-tree-dce -fno-tree-sra -fno-tree-copy-prop -fno-tree-ter,variant compared with BASE,38
+EXTRA_TREE_OPTS,-O2 -ftree-pre -ftree-partial-pre -ftree-loop-distribution,variant compared with BASE,38
+LTO,-O3 -flto,variant compared with BASE,48
+LTO_IPA,-O3 -flto -fipa-cp -fipa-ra,variant compared with BASE,48
+NO_ALIAS,-O2 -fno-strict-aliasing,variant compared with BASE,38
+STRICT_ALIAS,-O2 -fstrict-aliasing,variant compared with BASE,38
+O3_LOOPS,-O3 -funroll-loops -fpeel-loops -funswitch-loops,variant compared with BASE,48

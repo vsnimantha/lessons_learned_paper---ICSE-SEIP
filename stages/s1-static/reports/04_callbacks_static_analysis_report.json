@@ -1,0 +1,222 @@
+{
+  "plugin": "04_callbacks",
+  "source_dir": "/rofirrim_github/gcc-plugins-master/04_callbacks",
+  "source_files": [
+    "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_CLEAN",
+    "findings": [],
+    "reason": "",
+    "raw": ""
+  },
+  "gxx": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 12,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 12,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 17,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 17,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 22,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 22,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 27,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 27,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 32,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 32,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 37,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 37,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 42,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 42,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 47,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 47,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 52,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 52,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 57,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 57,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 62,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "gxx",
+        "file": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc",
+        "line": 62,
+        "severity": "warning",
+        "id": "-Wunused-parameter",
+        "message": "unused parameter \u2018user_data\u2019 [-Wunused-parameter]",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc: In function \u2018void callback_finish_type(void*, void*)\u2019:\n/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc:12:40: warning: unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]\n   12 | static void callback_finish_type(void *gcc_data, void *user_data)\n      |                                  ~~~~~~^~~~~~~~\n/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc:12:56: warning: unused parameter \u2018user_data\u2019 [-Wunused-parameter]\n   12 | static void callback_finish_type(void *gcc_data, void *user_data)\n      |                                                  ~~~~~~^~~~~~~~~\n/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc: In function \u2018void callback_finish_declaration(void*, void*)\u2019:\n/rofirrim_github/gcc-plugins-master/04_callbacks/callbacks.cc:17:47: warning: unused parameter \u2018gcc_data\u2019 [-Wunused-parameter]\n   17 | static void callback_finish_declaration(void *gcc_data, void *user_data)\n      |                                         ~~~~~~^~~~~~~~\n/Experimentation_Program\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "LOW_SIGNAL_ONLY"
+}

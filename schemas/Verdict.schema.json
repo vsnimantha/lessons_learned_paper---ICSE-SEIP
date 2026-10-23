@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verdict",
+  "description": "Stage s4",
+  "type": "object",
+  "required": [
+    "plugin",
+    "verdict"
+  ],
+  "properties": {
+    "plugin": {
+      "description": "string"
+    },
+    "verdict": {
+      "description": "string"
+    },
+    "findings": {
+      "description": "string (D ids, ;-separated)"
+    }
+  }
+}

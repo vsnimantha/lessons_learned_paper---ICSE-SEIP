@@ -1,0 +1,61 @@
+{
+  "plugin": "instrument-attribute-gcc-plugin-main",
+  "source_dir": "/instrument-attribute/instrument-attribute-gcc-plugin-main",
+  "source_files": [
+    "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c",
+    "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/utils.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/utils.c",
+        "line": 57,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'token' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c",
+        "line": 77,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'list' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c",
+        "line": 152,
+        "severity": "style",
+        "id": "constParameterPointer",
+        "message": "Parameter 'plugin_info' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c",
+        "line": 189,
+        "severity": "style",
+        "id": "constVariablePointer",
+        "message": "Variable 'verbose_value' can be declared as pointer to const",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/utils.c:57:style:constVariablePointer:Variable 'token' can be declared as pointer to const\n/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c:77:style:constParameterPointer:Parameter 'list' can be declared as pointer to const\n/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c:152:style:constParameterPointer:Parameter 'plugin_info' can be declared as pointer to const\n/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c:189:style:constVariablePointer:Variable 'verbose_value' can be declared as pointer to const\n"
+  },
+  "gxx": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "instrument_attribute.c: /instrument-attribute/instrument-attribute-gcc-plugin-main/src; utils.c: /instrument-attribute/instrument-attribute-gcc-plugin-main/src",
+    "raw": "/instrument-attribute/instrument-attribute-gcc-plugin-main/src/instrument_attribute.c:27:10: fatal error: utils.h: No such file or directory\n   27 | #include \"utils.h\"\n      |          ^~~~~~~~~\ncompilation terminated.\n\n/instrument-attribute/instrument-attribute-gcc-plugin-main/src/utils.c:20:10: fatal error: utils.h: No such file or directory\n   20 | #include \"utils.h\"\n      |          ^~~~~~~~~\ncompilation terminated.\n\n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

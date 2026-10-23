@@ -1,0 +1,51 @@
+{
+  "plugin": "gcc_assert_introspect-master",
+  "source_dir": "/gcc_assert_introspect-master",
+  "source_files": [
+    "/gcc_assert_introspect-master/plugin.c"
+  ],
+  "plugin_include_dir": "/usr/lib/gcc/x86_64-linux-gnu/13/plugin/include",
+  "cppcheck": {
+    "outcome": "PARSED_WITH_FINDINGS",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "file": "/gcc_assert_introspect-master/plugin.c",
+        "line": 548,
+        "severity": "style",
+        "id": "duplicateExpressionTernary",
+        "message": "Same expression in both branches of ternary operator.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc_assert_introspect-master/plugin.c",
+        "line": 57,
+        "severity": "warning",
+        "id": "constStatement",
+        "message": "Found suspicious operator ',', result is not used.",
+        "signal": "LOW_SIGNAL"
+      },
+      {
+        "tool": "cppcheck",
+        "file": "/gcc_assert_introspect-master/plugin.c",
+        "line": 790,
+        "severity": "style",
+        "id": "unreadVariable",
+        "message": "Variable 'n' is assigned a value that is never used.",
+        "signal": "LOW_SIGNAL"
+      }
+    ],
+    "reason": "",
+    "raw": "/gcc_assert_introspect-master/plugin.c:548:style:duplicateExpressionTernary:Same expression in both branches of ternary operator.\n/gcc_assert_introspect-master/plugin.c:57:warning:constStatement:Found suspicious operator ',', result is not used.\n/gcc_assert_introspect-master/plugin.c:790:style:unreadVariable:Variable 'n' is assigned a value that is never used.\n"
+  },
+  "gxx": {
+    "outcome": "PARSE_FAILED",
+    "findings": [],
+    "reason": "plugin.c: /gcc_assert_introspect-master/plugin.c:32:11: error: ISO C++ f",
+    "raw": "/gcc_assert_introspect-master/plugin.c: In function \u2018decl_expr_list* get_decl_expr_list(tree, tree, make_repr_params*)\u2019:\n/gcc_assert_introspect-master/plugin.c:32:11: error: ISO C++ forbids declaration of \u2018typeof\u2019 with no type [-fpermissive]\n   32 |     const typeof( ((type *)0)->member ) *__mptr = (ptr);  \\\n      |           ^~~~~~\n/gcc_assert_introspect-master/plugin.c:634:34: note: in expansion of macro \u2018container_of\u2019\n  634 | #define to_decl_expr_list(_list) container_of(_list, struct decl_expr_list, list)\n      |                                  ^~~~~~~~~~~~\n/gcc_assert_introspect-master/plugin.c:682:16: note: in expansion of macro \u2018to_decl_expr_list\u2019\n  682 |         return to_decl_expr_list(list);\n      |                ^~~~~~~~~~~~~~~~~\n/gcc_assert_introspect-master/plugin.c:634:77: error: cannot convert \u2018expr_list\u2019 to \u2018const int\u2019 in initialization\n  634 | #define to_decl_expr_list(_list) container_of(_list, struct decl_expr_list, list)\n      |                                                                             ^\n      |                                                            \n"
+  },
+  "high_signal_findings": [],
+  "high_signal_count": 0,
+  "overall": "PARTIAL_PARSE"
+}

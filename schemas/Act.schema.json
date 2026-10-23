@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Act",
+  "description": "Stage s2",
+  "type": "object",
+  "required": [
+    "plugin",
+    "activation_condition"
+  ],
+  "properties": {
+    "plugin": {
+      "description": "string"
+    },
+    "activation_condition": {
+      "description": "string"
+    },
+    "args": {
+      "description": "array of string"
+    },
+    "seed_programs": {
+      "description": "array of path"
+    }
+  }
+}
