@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Summarise the raw Stage 1 reports (stages/s1-static/reports/*.json) into
+"""Summarise the raw Stage 1 reports (data/static_reports/*.json) into
 data/s1_reports.csv (one row per plugin) and data/s1_high_signal.csv (one row per
 high-signal report). Pure standard library."""
 import csv, glob, json, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REP = os.path.join(ROOT, "stages", "s1-static", "reports")
+REP = os.path.join(ROOT, "data", "static_reports")
 OK = ("PARSED_CLEAN", "PARSED_WITH_FINDINGS")
 
 

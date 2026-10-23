@@ -1,19 +1,13 @@
-# Reproducing
+# Reproducing the paper's numbers
 
-## Level 1: paper numbers (minutes, no GCC)
 ```
 make check-seip
 ```
-`check_seip.py` prints PASS or FAIL with the paper location of each number.
+Needs only Python 3.8+ (standard library). `analysis/check_seip.py` recomputes every number the paper states from
+`data/` and prints PASS or FAIL with the paper location of each number.
 
-## Level 2: rerun a stage on one plugin
-Requires the stage tool in its slot and the toolchain: GCC 13.3 (x86-64) for triage, GCC 10 to 14
-for differential verification, Cppcheck 2.13.0 for static analysis.
+To regenerate the static-analysis summaries from the raw reports in `data/static_reports/`:
 ```
-pipeline/run_pipeline.sh --plugin SecRetAddress --stages s4
+python3 scripts/import_s1_reports.py
 ```
-
-## Level 3: full pipeline
-Needs all four tools, the corpus under `corpus/` and several hours. Genetic programming is stochastic;
-seeds, compiler versions, plugin commits and flags are recorded per run.
 The corpus plugins are third-party code and are not redistributed here; `data/plugins.csv` lists them.

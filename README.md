@@ -5,8 +5,8 @@ experience report over a multi-year programme of studies on one corpus of 25 GCC
 This package holds the per-record data of those studies.
 
 **Status (read first).** Stage 1 numbers are recomputed from the raw static reports in
-`stages/s1-static/reports/`. The per-record triage data (Stage 3 and 4) are authoritative.
-The Stage 2 (activation) columns and the merged defect ledger are transcribed from paper tables
+`data/static_reports/`. The per-record triage data (Stage 3 and 4) are authoritative.
+The activation columns and the merged defect ledger are transcribed from paper tables
 because the raw activation runs are not in this package yet (see `docs/TODO.md`).
 
 ## Quick start (standard library only, Python 3.8+)
@@ -19,7 +19,7 @@ make check-seip   # recompute every number the paper states (43 checks); `make c
 
 | Paper location | Claim | Data |
 |---|---|---|
-| Table V, Episode 4 | 25 plugins; 8 fully / 16 partially / 1 not analysed | `data/plugins.csv`, `stages/s1-static/reports/` |
+| Table V, Episode 4 | 25 plugins; 8 fully / 16 partially / 1 not analysed | `data/plugins.csv`, `data/static_reports/` |
 | Table V | 18 raw high-signal reports, 13 distinct cases, 11 defects and 2 risks | `data/s1_high_signal.csv`, `data/plugins.csv` |
 | Table V, Episode 5 | 16 plugins; 7 reproducible failures; 1 developer-confirmed; 2 flaggable by default warnings, 1 reported by our static baseline | `data/activation_bugs.csv`, `data/ledger.csv` |
 | Table V, Episode 6 | 17 plugins; 69 programs; 1,163 records = 1,035 comparisons + 128 baseline rows | `data/records.csv` |
@@ -34,12 +34,11 @@ make check-seip   # recompute every number the paper states (43 checks); `make c
 ## Layout
 
 ```
-data/       corpus, per-record differential data, verdicts, findings, ledger, costs
-analysis/   check_seip.py (recomputes the paper's numbers), common.py
-stages/     one directory per stage; stage 1 holds the raw static reports
-schemas/    JSON Schemas of the typed artifacts passed between stages
-pipeline/   stage orchestrator (needs the stage tools, see docs/INTEGRATING_TOOLS.md)
-docs/       overview, stage interfaces, provenance, TODO
+data/            per-record differential data, verdicts, findings, ledger, costs
+data/static_reports/   raw static-analysis reports of the baseline run (one JSON per plugin)
+analysis/        check_seip.py (recomputes the paper's numbers), common.py
+scripts/         import_s1_reports.py (summarises the raw static reports)
+docs/            provenance of each data file, reproducing, TODO
 ```
 
 ## Known limits
@@ -50,4 +49,3 @@ docs/       overview, stage interfaces, provenance, TODO
   `docs/PROVENANCE.md`. Disclosure states in `data/findings.csv` are a snapshot and may be out of date.
 - Resolved share: the paper reports 390 of 1,020 investigated comparisons (38.2%). Counting the 128 baseline rows and 15 uninvestigated comparisons as resolved would give 533 of 1,163 (45.8%), the figure of the earlier triage study.
 - Not in this package yet: the raw contract-sweep runs, the stackleak 16-plugin-build assembly comparison, and the 47-versus-0 stackleak trace counts (from the differential study's own repository). `data/contract_sweeps.csv` is transcribed.
-- The Dockerfile is untested.
