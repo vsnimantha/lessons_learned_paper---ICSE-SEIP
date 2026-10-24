@@ -98,6 +98,9 @@ check("SecRetAddress benign comparisons", sum(r["label"] == "CONFIRMED_BENIGN" f
 chan = [on(r["s1_reported"]) + on(r["s2_reproduced"]) + on(r["s4_confirmed"]) for r in ledger]
 check("ledger defects", len(ledger), 27, "Section V")
 check("found by exactly one stage", sum(c == 1 for c in chan), 21, "Section V")
+cover = [sum(r[k] != "n/a" for k in ("s1_reported", "s2_reproduced", "s4_confirmed")) for r in ledger]
+check("ledger entries in plugins covered by two or more stages", sum(c >= 2 for c in cover), 24, "Section V")
+check("of those, found by exactly one stage", sum(c >= 2 and h == 1 for c, h in zip(cover, chan)), 18, "Section V")
 
 # ---- cost numbers
 check("template authoring (min per plugin, range)", (min(int(r["authoring_minutes"]) for r in tmpl), max(int(r["authoring_minutes"]) for r in tmpl)),
