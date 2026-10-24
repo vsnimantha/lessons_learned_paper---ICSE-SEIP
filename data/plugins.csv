@@ -12,15 +12,15 @@ sancov,sancov,Full-stage subset,P,0,23.2,68.9,0,32,60,35.9,"Benign, out of scope
 SecRetAddress,SecRetAddress,Full-stage subset,C,0,15.1,98.2,1,0,60,97.5,Bug (D1); benign label audited,1,1,1,,
 Stackleak,stack_leak,Full-stage subset,P,0,15.9,59.2,1,60,60,64.5,Benign; activation defect outside contract,1,1,1,,
 Structleak,struck_leak,Full-stage subset,P,0,20.1,63.8,0,60,60,65.0,Benign,1,1,1,,
-static_analyser,,Activation but not verification,P,1,19.4,59.4,1,,,,Defect reported (fprintf2),1,1,0,,TODO
-DFED,,Activation but not verification,P,5,13.8,55.6,1,,,,Defect confirmed by developer; 4 returns uncalled,1,1,0,,TODO
-reftrack,,Activation but not verification,C,1,17.1,57.1,0,,,,"Risk, latent",1,1,0,,TODO
+static_analyser,,Activation but not verification,P,1,19.4,59.4,1,,,,Defect reported (fprintf2),1,1,0,,
+DFED,,Activation but not verification,P,5,13.8,55.6,1,,,,Defect confirmed by developer; 4 returns uncalled,1,1,0,,
+reftrack,,Activation but not verification,C,1,17.1,57.1,0,,,,"Risk, latent",1,1,0,,
 01_first,roffirim_01_first,Verification but not activation,C,0,,,,0,60,80.8,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
 02_help_version,roffirim_02_help_version,Verification but not activation,C,0,,,,0,60,80.8,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
 03_parameters,roffirim_03_parameters,Verification but not activation,C,0,,,,0,60,66.7,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
 04_callbacks,roffirim_04_callbacks,Verification but not activation,C,0,,,,0,60,94.5,"Benign label, not examined",1,0,1,NO_MEANINGFUL_SEARCH_OBJECTIVE,
-05_my_first_pass,,Static analysis only,C,0,,,,,,,No finding,1,0,0,TODO,TODO
-CTraps,,Static analysis only,P,3,,,,,,,"3 source defects, no execution evidence",1,0,0,TODO,TODO
-KayrebtCallgraphs,,Static analysis only,P,0,,,,,,,No high-signal report,1,0,0,TODO,TODO
-gcc-jump-master,,Static analysis only,P,1,,,,,,,"Risk, unresolved",1,0,0,TODO,TODO
-gcc-python-plugin,,Static analysis only,P,0,,,,,,,No high-signal report,1,0,0,TODO,TODO
+05_my_first_pass,,Static analysis only,C,0,,,,,,,No finding,1,0,0,,
+CTraps,,Static analysis only,P,3,,,,,,,"3 source defects, no execution evidence",1,0,0,,
+KayrebtCallgraphs,,Static analysis only,P,0,,,,,,,No high-signal report,1,0,0,,
+gcc-jump-master,,Static analysis only,P,1,,,,,,,"Risk, unresolved",1,0,0,,
+gcc-python-plugin,,Static analysis only,P,0,,,,,,,No high-signal report,1,0,0,,

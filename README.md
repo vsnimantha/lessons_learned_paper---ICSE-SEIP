@@ -7,7 +7,7 @@ This package holds the per-record data of those studies.
 **Status (read first).** Stage 1 numbers are recomputed from the raw static reports in
 `data/static_reports/`. The per-record triage data (Stage 3 and 4) are authoritative.
 The activation columns and the merged defect ledger are transcribed from paper tables
-because the raw activation runs are not in this package yet (see `docs/TODO.md`).
+because the raw activation runs are not in this package (see Known limits).
 
 ## Quick start (standard library only, Python 3.8+)
 
@@ -38,14 +38,22 @@ data/            per-record differential data, verdicts, findings, ledger, costs
 data/static_reports/   raw static-analysis reports of the baseline run (one JSON per plugin)
 analysis/        check_seip.py (recomputes the paper's numbers), common.py
 scripts/         import_s1_reports.py (summarises the raw static reports)
-docs/            provenance of each data file, reproducing, TODO
+docs/            provenance of each data file, reproducing
 ```
 
 ## Known limits
 
+- Raw activation runs (per-run values, crash logs), the stackleak 16-build assembly comparison, the 47-versus-0 trace
+  counts, and the raw contract-sweep runs are not in this package. `data/contract_sweeps.csv` and the activation
+  columns are transcribed from the study papers.
+- Some entries are transcribed from earlier papers rather than recomputed; `docs/PROVENANCE.md` marks which.
 - Plugins are tied to GCC internals: the triage study pins GCC 13.3 on x86-64, the differential
   verification spans GCC 10 to 14.
 - The 15 findings were reproduced on the study copies; upstream commits are in `data/activation_bugs.csv` and
   `docs/PROVENANCE.md`. Disclosure states in `data/findings.csv` are a snapshot and may be out of date.
 - Resolved share: the paper reports 390 of 1,020 investigated comparisons (38.2%). Counting the 128 baseline rows and 15 uninvestigated comparisons as resolved would give 533 of 1,163 (45.8%), the figure of the earlier triage study.
 - Not in this package yet: the raw contract-sweep runs, the stackleak 16-plugin-build assembly comparison, and the 47-versus-0 stackleak trace counts (from the differential study's own repository). `data/contract_sweeps.csv` is transcribed.
+
+## License
+
+MIT (see `LICENSE`), covering the scripts and the data. The plugins under study and their source code remain under their own licences; this package contains analysis outputs about them, not their code.
